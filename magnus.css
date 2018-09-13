@@ -9,25 +9,142 @@ table, tr, th, td, figure, dl, dt, dd {
 	vertical-align: baseline;
 }
 
+.clearer {
+    clear: both;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    margin: 0 0 3em 0;
+    color: #333;
+}
+
 strong {
 	font-weight: 700;
 }
 
-body {
-	font-family: 'PT Sans', sans-serif;
-	font-weight: 400;
-	font-size: 1.2em;
-	margin: 5%;
+main {
+    line-height: 1.7em;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
+
 h1 {
-	text-transform: uppercase;
-	font-size: 1.5em;
-	font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 700;
+    line-height: 1.3em;
+    margin-bottom: 1em;
 }
 
 h2 {
-	font-size: 1.1em;
+	font-size: 1.3em;
 	text-transform: uppercase;
 	margin-bottom: 0.8em;
+}
+
+h3 {
+    font-size: 0.65em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 3em 0 1em 0;    
+}
+
+a {
+	color: #0147fa;
+	text-decoration: none;
+	padding-bottom: 1px;
+	border-bottom: 1px solid;
+}
+
+img#avatar {
+    width: 50%;
+    float: left;
+}
+
+main section p {
+    margin-bottom: 0.8em;
+}
+
+section#intro ul.social {
+    padding: 1.5em;
+    float: right;
+}
+
+ul.blogposts li {
+    padding: 1em;
+    background-color: #eee;
+    margin: 0 0 1em 0;
+    list-style: none;
+    text-align: left;
+}
+
+ul.blogposts li a, ul.social li a {
+    color: #333;
+    border: none;
+}
+
+ul.blogposts li a i {
+    margin-right: 0.5em;
+}
+
+#expand i {
+    margin-right: 0.2em;
+}
+
+ul.social {
+    padding: 1em;
+}
+
+ul.social li a {
+    padding: 0.2em;
+}
+
+ul.social li {
+    display: inline-block;
+    list-style: none;
+}
+
+ul.social li a span {
+    display: none;
+}
+
+section#intro {
+    clear: right;
+    width: 45%;
+    padding-left: 5%;
+    float: right;
+}
+
+section#more, section#about {
+    clear: both;
+    text-align: center;
+    padding: 1em 0 0 0;
+}
+
+section#about {
+    display: none;
+    margin-top: 3em;
+    padding: 2em 4em;
+    background-color: #eee;
+}
+
+section#about h3 {
+    margin-top: 0;
+}
+
+section#about ol {
+    text-align: left;
+    font-size: 0.8em;
+}
+
+aside {
+    float: right;
+}
+
+p#expand {
+    font-size: 0.8em;
 }
