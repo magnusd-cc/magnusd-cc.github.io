@@ -1,0 +1,123 @@
+<html>
+
+<!--
+
+    User Story #1: My tribute page should have an element with a corresponding id="main", 
+    which contains all other elements.
+
+    User Story #2: I should see an element with a corresponding id="title", which contains a string 
+    (i.e. text) that describes the subject of the tribute page (e.g. "Dr. Norman Borlaug").
+
+    User Story #3: I should see a div element with a corresponding id="img-div".
+
+    User Story #4: Within the img-div element, I should see an img element with a corresponding 
+    id="image".
+
+    User Story #5: Within the img-div element, I should see an element with a corresponding 
+    id="img-caption" that contains textual content describing the image shown in img-div.
+
+    User Story #6: I should see an element with a corresponding id="tribute-info", which contains 
+    textual content describing the subject of the tribute page.
+
+    User Story #7: I should see an a element with a corresponding id="tribute-link", which links 
+    to an outside site that contains additional information about the subject of the tribute page. 
+    HINT: You must give your element an attribute of target and set it to _blank in order for your 
+    link to open in a new tab (i.e. target="_blank").
+
+    User Story #8: The img element should responsively resize, relative to the width of its parent 
+    element, without exceeding its original size.
+
+    User Story #9: The img element should be centered within its parent element.
+
+-->
+
+    <head>
+        <title>Autumn - 5 reasons one season beats all others</title>
+        <link rel="stylesheet" type="text/css" href="autumn.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div id="main"><!-- US-1 -->
+
+            <header>
+                <h1 id="title">Autumn</h1><!-- US-2 -->
+                <div>5 reasons one season beats all others</div>
+            </header>
+
+            <div id="img-div"><!-- US-3 -->
+                <figure>
+                    <img src="leaves.jpg" id="image" alt="Autumnal picture"><!-- US-4 -->
+                    <figcaption id="img-caption"><!-- US-5 -->
+                        “assorted-color lear hanging decor” by 
+                        <a href="https://unsplash.com/@chrislawton">Chris Lawton</a>
+                        on <a href="https://unsplash.com">Unsplash</a>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <section id="tribute-info"><!-- US-6 -->
+
+                <blockquote>
+                        “How beautifully leaves grow old. How full of light and color are their last days.”<br>
+                        – John Burrows
+                </blockquote>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sollicitudin dictum 
+                    venenatis. Mauris ac tellus nulla. Nullam nibh risus, euismod vitae turpis quis, 
+                    accumsan feugiat dui. Vestibulum eget turpis lacus. Integer et velit scelerisque 
+                    odio vulputate tristique id eu metus. Suspendisse vel consequat tortor. 
+                </p>
+                <p>
+                    Aenean porta non leo non pharetra. Curabitur commodo enim volutpat, scelerisque leo 
+                    ut, vulputate tortor. Duis mi urna, dignissim eu accumsan id, efficitur eget neque. 
+                    Maecenas ac elit et erat rutrum congue sit amet in lorem. Vivamus erat ante, 
+                    scelerisque eget congue eu, gravida a tellus. In commodo est dolor, vitae mattis 
+                    diam laoreet sed.
+                </p>
+
+                <ul>
+                    <li>
+                        Donec finibus tortor sit amet erat posuere, at condimentum enim mollis. 
+                        Pellentesque mauris justo, dictum eu interdum sed, sollicitudin ac magna.
+                    </li>
+                    <li>
+                        Aenean iaculis quis eros bibendum eleifend. Vivamus sodales augue vitae libero 
+                        iaculis, vel congue magna lobortis. 
+                    </li>
+                    <li>
+                        Sed gravida eros sit amet pharetra aliquam. Ut scelerisque elit massa, quis 
+                        sodales eros mollis sit amet. Ut consectetur ante eget nisl volutpat vehicula. 
+                        Maecenas eu ipsum dolor.
+                    </li>
+                </ul>
+
+                <p>
+                    Fusce iaculis diam mollis facilisis volutpat. Etiam vehicula fermentum scelerisque. 
+                    Ut condimentum sollicitudin ex. Vestibulum rutrum nunc quis mi fringilla tincidunt 
+                    a at metus.
+                </p>
+
+                <p>
+                    🍂 <a href="https://en.wikipedia.org/wiki/Autumn" id="tribute-link" target="_blank">Read more about autumn on Wikipedia</a><!-- US-6 -->
+                </p>
+
+            </section>
+
+            <footer>
+                This page by <a href="https://magnusdahlgren.com">Magnus Dahlgren</a> is the result of an 
+                <a href="https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-tribute-page">
+                    exercise on Free Boot Camp
+                </a>. 
+            </footer>
+
+        </div>
+
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    </body>
+
+
+</html>
