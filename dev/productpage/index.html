@@ -1,0 +1,123 @@
+<html>
+
+    <!-- 
+        User Story #1: My product landing page should have a header element with a corresponding id="header".
+        User Story #2: I can see an image within the header element with a corresponding id="header-img". A company logo would make a good image here.
+        User Story #3: Within the #header element I can see a nav element with a corresponding id="nav-bar".
+        User Story #4: I can see at least three clickable elements inside the nav element, each with the class nav-link.
+        User Story #5: When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page.
+        User Story #6: I can watch an embedded product video with id="video".
+        User Story #7: My landing page has a form element with a corresponding id="form".
+        User Story #8: Within the form, there is an input field with id="email" where I can enter an email address.
+        User Story #9: The #email input field should have placeholder text to let the user know what the field is for.
+        User Story #10: The #email input field uses HTML5 validation to confirm that the entered text is an email address.
+        User Story #11: Within the form, there is a submit input with a corresponding id="submit".
+        User Story #12: When I click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit) that confirms the email address was entered and that it posted successfully.
+        User Story #13: The navbar should always be at the top of the viewport.
+        User Story #14: My product landing page should have at least one media query.
+        User Story #15: My product landing page should utilize CSS flexbox at least once.
+    -->
+
+    <head>
+        <title>Product page</title>
+        <link rel="stylesheet" type="text/css" href="productpage.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header id="header">
+
+            <div id="logo">
+                <img src="lightbulb.png" id="header-img">
+                Lightbulb
+            </div>
+
+            <nav id="nav-bar">
+                <ul>
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#signup" class="nav-link">Find out more</a></li>
+                    <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <section id="splash">
+            <h1>Make your day brighter</h1>
+        </section>
+
+        <section id="features">
+
+            <h2>Turn night into day with a lightbulb!</h2>
+
+            <p>
+                Are you struggling to see what's really going on in your team? You are not alone. 
+                A recent survey found that several people often find themselves in the dark. But it
+                doesn't have to be this way! With a lightbulb, you can make almost any room brighter.
+            </p>
+
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/gGdGFtwCNBE" id="video"></iframe>
+
+        </section>
+
+        <section id="pricing">
+            <h2>Choose the right lightbulb</h2>
+
+            <div id="pricing-options">
+
+                <div>
+                    <h3>Personal</h3>
+
+                    <ul>
+                        <li>Includes the "off" mode only</li>
+                        <li>Free for life</li>
+                    </ul>
+
+                    <span class="price">FREE</span>
+
+                </div>
+                <div>
+                    <h3>Team</h3>
+
+                    <ul>
+                        <li>Enough light for up to five people, as long as they are in the same room</li>
+                        <li>Simply unscrew the bulb and bring it with you</li>
+                        <li>Equivalent of 60W</li>
+                    </ul>
+
+                    <span class="price">£5.99</span>
+
+                </div>
+                <div>
+                    <h3>Enterprise</h3>
+
+                    <ul>
+                        <li>Light up your entire company</li>
+                        <li>One huge lightbulb</li>
+                        <li>Up to 300,000,000 lumen</li>
+                    </ul>
+
+                    <span class="price">£50,000</span>
+
+                </div>
+
+            </div>
+        </section>
+
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+        <section id="signup">
+
+            <h2>Sign up today to find out more</h2>
+
+            <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+                <input type="email" id="email" name="email" placeholder="Enter your email address">
+                <input type="submit" id="submit" value="Sign up">
+            </form>
+        </section>
+
+    </body>
+
+
+</html>

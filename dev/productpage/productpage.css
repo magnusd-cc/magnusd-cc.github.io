@@ -1,0 +1,183 @@
+html, body, div, span, h1, h2, h3, p, blockquote, pre,
+a, em, img, strong, b, u, i, ol, ul, li, form, label, 
+table, tr, th, td, figure, dl, dt, dd {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #b0e1ff;
+    color: #333;
+    font-size: 18px;
+}
+
+main {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+    font-size: 5em;
+    font-weight: 800;
+    margin: 0 0 0.15em 0;
+}
+
+h2 {
+    font-size: 2.5em;
+    font-weight: 800;
+    margin: 0 0 0.7em 0;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 600;
+    text-align: center;
+}
+
+#header {
+    position: fixed;
+    background: #333;
+    width: 100%;
+    height: 3em;
+    display: flex;
+    align-items: center;
+}
+
+#header nav {
+    margin-left: flex-end;
+    margin-left: auto;
+}
+
+#header nav ul li {
+    display: inline;
+    margin-left: 2em;
+    padding: 0;
+}
+
+#header nav ul li a {
+    padding: 0.5em;
+    color: #fff;
+    text-decoration: none;
+}
+
+#header ul li a:hover {
+    color: #b0e1ff;
+    text-decoration: none;
+}
+
+#header-img {
+    height: 1.5em;
+}
+
+#logo {
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    align-content: center;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+#splash {
+    display: flex;
+    background: url("lightbulb.jpeg") no-repeat left center;
+    background-size: cover;
+    height: 100vh;
+    align-items: flex-end;
+    color: #fff;
+}
+
+#splash h1 {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+#features {
+    background: #fff;
+    padding: 3em 1em 4em 1em; 
+    text-align: center;
+} 
+
+#features p {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    max-width: 700px;
+    margin: 0 auto 3em auto;
+}
+
+#signup {
+    padding: 2em 1em 5em 1em; 
+    background: #fff;
+    text-align: center;
+}
+
+#pricing { 
+    padding: 2em 1em 3em 1em; 
+}
+#pricing h2 { 
+}
+
+#pricing-options {
+    display: flex;
+    justify-content: space-between;
+}
+
+#pricing-options h3 {
+    margin-bottom: 0.7em;
+}
+
+#pricing-options div {
+    display: flex;
+    flex-direction: column;
+    background-color: #75b3d9;
+    padding: 1em;
+    width: 28%;
+}
+
+#pricing-options div ul li {
+    margin: 0 0 0.4em 1.5em;
+}
+
+
+.price {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+    font-weight: 400;
+    text-align: center;
+    display: block;
+}
+
+@media (max-width: 800px) {
+    #pricing-options {
+      display: block;
+    }
+}
+
+#email {
+    background-color: #ccc;
+    border: none;
+    font-size: 1.5em;
+    padding: 0.5em;
+    width: 50%;
+}
+
+#submit {
+    background-color: #4689b2;
+    color: #fff;
+    font-size: 1.5em;
+    padding: 0.5em;
+}
+
+iframe {
+    border: none;
+}
