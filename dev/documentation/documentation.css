@@ -1,0 +1,96 @@
+html, body, div, span, h1, h2, h3, p, blockquote, pre,
+a, em, img, strong, b, u, i, ol, ul, li, form, label, 
+table, tr, th, td, figure, dl, dt, dd {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    font-size: 18px;
+}
+
+nav {
+    position: fixed;
+    padding: 2em;
+}
+
+nav header {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+
+
+nav li {
+    margin: 0 0 0.7em 0;
+    padding: 0;
+    list-style-type:none;
+}
+
+main {
+    padding: 2em;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 1.6em;
+    margin-bottom: 0.5em;
+}
+
+a {
+    color: #6f9000;
+}
+
+a:hover {
+    color: #344400;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+p {
+    margin-bottom: 0.6em;
+}
+
+li {
+    margin-left: 1.5em;
+    margin-bottom: 0.4em;
+}
+
+code {
+    display: block;
+    background-color: #eee;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+#page-wrapper {
+    display: flex;
+}
+
+#nav-wrapper {
+    flex-basis: 250px;
+    flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+    #page-wrapper {
+        display: block;
+    } 
+
+    nav {
+        position: relative;
+    }
+}
