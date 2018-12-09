@@ -136,7 +136,7 @@ h3 {
     margin-bottom: 0.7em;
 }
 
-.pricing-option {
+#pricing-options div {
     display: flex;
     flex-direction: column;
     background-color: #75b3d9;
@@ -144,7 +144,7 @@ h3 {
     width: 28%;
 }
 
-.pricing-option ul li {
+#pricing-options div ul li {
     margin: 0 0 0.4em 1.5em;
 }
 
@@ -154,17 +154,12 @@ h3 {
     font-size: 2em;
     font-weight: 400;
     text-align: center;
-    margin-top:auto;
+    display: block;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 800px) {
     #pricing-options {
-      flex-direction: column;
-    }
-
-    .pricing-option {
-        width: auto;
-        margin-bottom: 1em;
+      display: block;
     }
 }
 
