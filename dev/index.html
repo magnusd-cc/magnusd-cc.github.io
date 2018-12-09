@@ -1,28 +1,106 @@
+<!DOCTYPE html>
+
 <html>
+
+<!-- 
+
+    User Story #1: My portfolio should have a welcome section with an id of welcome-section.
+    User Story #2: The welcome section should have an h1 element that contains text.
+    User Story #3: My portfolio should have a projects section with an id of projects.
+    User Story #4: The projects section should contain at least one element with a class of project-tile to hold a project.
+    User Story #5: The projects section should contain at least one link to a project.
+    User Story #6: My portfolio should have a navbar with an id of navbar.
+    User Story #7: The navbar should contain at least one link that I can click on to navigate to different sections of the page.
+    User Story #8: My portfolio should have a link with an id of profile-link, which opens my GitHub or FCC profile in a new tab.
+    User Story #9: My portfolio should have at least one media query.
+    User Story #10: The height of the welcome section should be equal to the height of the viewport.
+    User Story #11: The navbar should always be at the top of the viewport.
+
+-->
+
+    <head>
+        <title>Magnus Dahlgren</title>
+        <link rel="stylesheet" type="text/css" href="portfolio.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    </head>
 
     <body>
 
-        <h1>Projects</h1>
-
-        <h2>Free Code Camp</h2>
-
-        <ul>
-            <li>
-                <a href="/dev/autumn">Responsive Web Design Projects - Build a Tribute Page</a>
-            </li>
-            <li>
-                <a href="/dev/survey">Responsive Web Design Projects - Build a Survey Form</a>
-            </li>
-            <li>
-                    <a href="/dev/productpage">Responsive Web Design Projects - Build a Product Landing Page</a>
+        <nav id="navbar">
+            <span id="logo"><a href="#welcome-section">Magnus Dahlgren</a></span>
+            <ul>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact me</a>
                 </li>
             </ul>
-        <h2>Miscellaneous</h2>
+        </nav>
 
-        <ul>
-            <li><a href="cloud.html">Cloud</a> - experimenting with CSS animations</li>
-        </ul>
+        <section id="welcome-section">
+            <img src="magnus.jpg" id="avatar">
+            <h1>Magnus Dahlgren</h1>
+            <span id="tagline">Novice Developer</span>
+        </section>
+
+        <section id="projects">
+
+            <h2>Coding Exercises</h2>
+
+            <ul>
+
+                <li class="project-tile">
+                    <a href="/dev/autumn"><img src="tribute.jpg"></a>
+                    <div class="description">
+                        <a href="/dev/autumn">Tribute Page</a>
+                        Free Code Camp exercise
+                    </div>
+                </li>
+
+                <li class="project-tile">
+                    <a href="/dev/survey"><img src="survey.jpg"></a>
+                    <div class="description">
+                        <a href="/dev/survey">Survey Form</a>
+                        Free Code Camp exercise
+                    </div>
+                </li>
+                    
+                <li class="project-tile">
+                    <a href="/dev/productpage"><img src="productpage.jpg"></a>
+                    <div class="description">
+                        <a href="/dev/productpage">Product Landing Page</a>
+                        Free Code Camp exercise
+                    </div>
+                </li>
+                    
+                <li class="project-tile">
+                    <a href="cloud.html"><img src="cloud.jpg"></a>
+                    <div class="description">
+                        <a href="cloud.html">Cloud</a>
+                        Experimenting with CSS animations
+                    </div>
+                </li>
+    
+            </ul>
+
+            <a href="https://github.com/magnusdahlgren" id="profile-link" target="_blank">See more on my Github profile &raquo;</a>
+
+        </section>
+
+        <section id="contact">
+
+            <h2>Get in touch</h2>
+
+            <p>
+                Email me on 
+                <a href="mailto:hello@magnusdahlgren.com">hello@magnusdahlgren.com</a>
+            </p>
+
+        </section>
+
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
     </body>
-</html>
 
+</html>

@@ -1,0 +1,165 @@
+html, body, div, span, h1, h2, h3, p, blockquote, pre,
+a, em, img, strong, b, u, i, ol, ul, li, form, label, 
+table, tr, th, td, figure, dl, dt, dd {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: 700;
+    margin: 0.5em 0 0.25em 0;
+}
+
+h2 {
+    font-size: 2.1em;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+a {
+    color: #005b96;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#welcome-section {
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#navbar {
+    display: flex;
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    align-items: center;
+}
+
+#navbar ul {
+    margin: 0 0 0 auto;
+}
+
+#navbar li {
+    display: inline;
+    padding: 0.5em;
+}
+
+#navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em;
+    text-transform: uppercase;
+}
+
+#logo {
+    color: #fff;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0.5em;
+}
+
+#projects {
+    padding: 3em 0;
+    text-align: center;
+    color: #333;
+    background-color: #eee;
+}
+
+#projects img {
+    width: 100%;
+}
+
+#projects ul {
+    max-width: 900px;
+    margin: 2em auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+#projects li {
+    background-color: #fff;
+    border-radius: 12px;
+    list-style: none;
+    text-align: left;
+    overflow: hidden;
+}
+
+#projects a {
+    display: block;
+    font-size: 1.2em;
+}
+
+#contact {
+    padding: 3em 0;
+    text-align: center;
+}
+
+#avatar {
+    border-radius: 50%;
+    width: 250px;
+    height: auto;
+    margin: 0 auto;
+}
+
+#tagline {
+    font-size: 2em;
+    color: #666;
+}
+
+.thumbnail {
+    background-color: #ddd;
+    width: 100%;
+    height: 0;
+    display: flex;
+    padding-top: 56.25%;
+    position: relative;
+    overflow: hidden;
+}
+
+.thumbnail img {
+    position: absolute;
+    object-fit: fill;
+    top: 0;
+    left: 0;
+}
+
+.description {
+    padding: 1em;
+}
+
+@media (max-width: 400px) {
+
+    #projects ul {
+        display: block;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    #projects ul {
+        grid-template-columns: 50% 50%;
+    }
+
+}
+
