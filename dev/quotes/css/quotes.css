@@ -1,0 +1,64 @@
+html, body, div, span, h1, h2, h3, p, blockquote, pre,
+a, em, img, strong, b, u, i, ol, ul, li, form, label, 
+table, tr, th, td, figure, dl, dt, dd, button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+    background-image: url('../images/photo-road.jpg');
+    background-size: cover;
+    font-family: 'PT Serif', serif;
+}
+
+#quote-box {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: stretch;
+}
+
+#quote {
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 1em;
+}
+
+#new-quote, #tweet-quote {
+    color: #000;
+    background: #fff;
+    border-radius: 0.3em;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 0.3em 0.7em;
+    text-decoration: none;
+    margin: 1em;
+    opacity: 0.9;
+}
+
+#new-quote:hover, #tweet-quote:hover {
+    opacity: 1;
+}
+
+#controls {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+blockquote {
+    font-size: 4em;
+}
+
+cite {
+    font-size: 3em;
+    font-style: italic;
+}
+
