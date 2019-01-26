@@ -79,11 +79,11 @@ var Display = function (_React$Component2) {
             if (this.props.nowPlaying != null) {
                 return React.createElement(
                     "div",
-                    { id: "display" },
+                    { id: "display", "class": "populated" },
                     this.props.nowPlaying
                 );
             } else {
-                return React.createElement("div", null);
+                return React.createElement("div", { id: "display" });
             }
         }
     }]);
