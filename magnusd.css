@@ -89,18 +89,69 @@ blockquote {
     border-left: 1px solid #666;
 }
 
-div#container {
-    max-width: 800px;
-    margin: 4em auto 0 auto;
+.magnetizer-index .parallax {
+    perspective: 1px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
-div#intro {
-    background-color: #eceff4;
-    height: 100vh;
+.magnetizer-index .parallax__layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.magnetizer-index .parallax__layer--base {
+    transform: translateZ(0);
+}
+
+.magnetizer-index .parallax__layer--back {
+    transform: translateZ(-1px) scale(2);
+}
+
+.magnetizer-article #intro-background {
+    display: none;
+}
+
+.magnetizer-index #intro-background {
+    background: url(magnus-dahlgren-background.jpg);
+    background-size: cover;
+}
+
+.magnetizer-index #first-screen {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     overflow: hidden;
 }
 
+
+div#container {
+    background: #fff;
+    padding: 4em 0 0 0;
+}
+
+div#content {
+    max-width: 800px;
+    margin: 0em auto;
+}
+
+div#intro { }
+
+div#intro div {
+    max-width: 1000px;
+}
+
+div#intro div section {
+    margin: 0 0 0 auto;
+    width: 50%;
+}
+
 div#intro h1 {
+    line-height: 1.3em;
     margin-bottom: 0.5em;
     font-size: 2.5em;
 }
@@ -144,7 +195,6 @@ ul.social li a span {
 
 header {
     padding: 0.7em;
-    background-color: #eceff4;
 }
 
 footer.about {
@@ -208,10 +258,12 @@ article {
 }
 
 div.latest {
+    background: #fff;
     text-align: center;
     font-size: 1.2em;
     text-transform: uppercase;
-    margin: 2em 0 3em 0;
+    padding: 2em 0 3em 0;
+    align-self: flex-end;
 }
 
 footer.page-footer {
@@ -219,17 +271,23 @@ footer.page-footer {
     text-align: center;
 }
 
-p.scroll-down {
-    margin-top: 4em;
+div#read-my-blog {
+    font-size: 1.2em;
+    text-align: center;
+    padding: 1em;
+    align-self: flex-end;
 }
 
-p.scroll-down a {
-    font-size: 2em;
-    color: #666;
+div#read-my-blog a {
+    display: block;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 1em 3em;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
-p.scroll-down a span {
-    display: none;
+div#read-my-blog a i {
+    padding-right: 0.4em;
 }
-
