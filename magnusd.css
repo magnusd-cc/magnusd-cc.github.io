@@ -226,6 +226,10 @@ article {
     line-height: 1.7em;
 }
 
+.magnetizer-article div#latest-articles-header {
+    display: none;
+}
+
 div#latest-articles-header {
     background: #fff;
     text-align: center;
