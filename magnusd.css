@@ -124,6 +124,7 @@ blockquote {
 .magnetizer-index #first-screen {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     min-height: 100vh;
     overflow: hidden;
 }
@@ -272,14 +273,14 @@ footer.page-footer {
 }
 
 div#read-my-blog {
-    font-size: 1.2em;
+    width: 100%;
+    font-size: 1.1em;
     text-align: center;
     padding: 1em;
     align-self: flex-end;
 }
 
 div#read-my-blog a {
-    display: block;
     margin: 0 auto;
     background: rgba(0, 0, 0, 0.6);
     color: #fff;
