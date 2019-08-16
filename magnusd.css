@@ -105,9 +105,10 @@ div#content {
     justify-content: space-between;
     min-height: 100vh;
     overflow: hidden;
+    background: #eceff4;
 }
 
-div#intro { padding: 2em; }
+div#intro { padding: 1em; }
 
 div#intro div {
     max-width: 1000px;
@@ -217,6 +218,7 @@ footer.about img {
 }
 
 article {
+    padding: 1em;
     line-height: 1.7em;
 }
 
@@ -257,6 +259,10 @@ div#read-my-blog a i {
 
 @media screen and (min-width: 800px) {
 
+    .magnetizer-index #first-screen {
+        background: none;
+    }
+
     div#intro { padding: 0; }
 
     div#intro div section {
@@ -296,4 +302,8 @@ div#read-my-blog a i {
         background-size: cover;
     }
 
+    article {
+        padding: 0em;
+    }
+    
 }
