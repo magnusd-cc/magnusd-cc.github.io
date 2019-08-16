@@ -30,7 +30,7 @@ h1, h2, h3 {
 }
 
 h1, body.magnetizer-index h2 {
-    font-size: 2em;
+    font-size: 2.3em;
 }
 
 h2, body.magnetizer-index h3 {
@@ -183,7 +183,7 @@ footer.about img {
 }
 
 #site-name img {
-   width: 40px;
+   width: 50px;
    border-radius: 50%;
    vertical-align: middle;
    margin: 0 0.5em 0 0;
@@ -191,7 +191,7 @@ footer.about img {
 
 #site-name h1 {
     display: inline;
-    font-size: 1.1em;
+    font-size: 1.3em;
     letter-spacing: 0.03em;
     font-weight: 600;
 }
@@ -204,12 +204,15 @@ footer.about img {
     margin: 0 auto;
 }
 
-.date a {
+.date {
     font-size: 0.9em;
     color: #666;
     text-transform: uppercase;
     letter-spacing: 0.07em;
     margin: 1.5em 0 2em 0;
+}
+.date a {
+    color: #666;
     border: none;
 }
 
@@ -218,17 +221,17 @@ footer.about img {
 }
 
 article {
+    font-size: 1.05em;
     padding: 1em;
     line-height: 1.7em;
 }
 
-div.latest {
+div#latest-articles-header {
     background: #fff;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.1em;
     text-transform: uppercase;
-    padding: 2em 0 3em 0;
-    align-self: flex-end;
+    margin: 0 0 3em 0;
 }
 
 footer.page-footer {
