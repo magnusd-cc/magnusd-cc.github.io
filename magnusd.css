@@ -237,24 +237,7 @@ footer.page-footer {
 }
 
 div#read-my-blog {
-    width: 100%;
-    font-size: 1.1em;
-    text-align: center;
-    padding: 1em;
-    align-self: flex-end;
-}
-
-div#read-my-blog a {
-    margin: 0 auto;
-    background: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    padding: 1em 3em;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-div#read-my-blog a i {
-    padding-right: 0.4em;
+    display: none;
 }
 
 @media screen and (min-width: 800px) {
@@ -304,6 +287,28 @@ div#read-my-blog a i {
 
     article {
         padding: 0em;
+    }
+
+    div#read-my-blog {
+        display: block;
+        width: 100%;
+        font-size: 1.1em;
+        text-align: center;
+        padding: 1em;
+        align-self: flex-end;
+    }
+    
+    div#read-my-blog a {
+        margin: 0 auto;
+        background: rgba(0, 0, 0, 0.6);
+        color: #fff;
+        padding: 1em 3em;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    
+    div#read-my-blog a i {
+        padding-right: 0.4em;
     }
     
 }
