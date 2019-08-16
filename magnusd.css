@@ -301,7 +301,7 @@ div#read-my-blog {
         width: 100%;
         font-size: 1.1em;
         text-align: center;
-        padding: 1em;
+        padding: 1em 0;
         align-self: flex-end;
     }
     
