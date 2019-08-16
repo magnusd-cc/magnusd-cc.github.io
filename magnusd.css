@@ -89,47 +89,6 @@ blockquote {
     border-left: 1px solid #666;
 }
 
-.magnetizer-index .parallax {
-    perspective: 1px;
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-
-.magnetizer-index .parallax__layer {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
-.magnetizer-index .parallax__layer--base {
-    transform: translateZ(0);
-}
-
-.magnetizer-index .parallax__layer--back {
-    transform: translateZ(-1px) scale(2);
-}
-
-.magnetizer-article #intro-background {
-    display: none;
-}
-
-.magnetizer-index #intro-background {
-    background: url(magnus-dahlgren-background.jpg);
-    background-size: cover;
-}
-
-.magnetizer-index #first-screen {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 100vh;
-    overflow: hidden;
-}
-
-
 div#container {
     background: #fff;
     padding: 4em 0 0 0;
@@ -140,15 +99,18 @@ div#content {
     margin: 0em auto;
 }
 
-div#intro { }
+.magnetizer-index #first-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+div#intro { padding: 2em; }
 
 div#intro div {
     max-width: 1000px;
-}
-
-div#intro div section {
-    margin: 0 0 0 auto;
-    width: 50%;
 }
 
 div#intro h1 {
@@ -291,4 +253,47 @@ div#read-my-blog a {
 
 div#read-my-blog a i {
     padding-right: 0.4em;
+}
+
+@media screen and (min-width: 800px) {
+
+    div#intro { padding: 0; }
+
+    div#intro div section {
+        margin: 0 2em 0 auto;
+        width: 40%;
+    }
+
+    .magnetizer-index .parallax {
+        perspective: 1px;
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .magnetizer-index .parallax__layer {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    .magnetizer-index .parallax__layer--base {
+        transform: translateZ(0);
+    }
+
+    .magnetizer-index .parallax__layer--back {
+        transform: translateZ(-1px) scale(2);
+    }
+
+    .magnetizer-article #intro-background {
+        display: none;
+    }
+
+    .magnetizer-index #intro-background {
+        background: url(magnus-dahlgren-background.jpg);
+        background-size: cover;
+    }
+
 }
