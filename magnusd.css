@@ -26,7 +26,8 @@ body {
 }
 
 h1, h2, h3 {
-    font-weight: 600;
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
 }
 
 h1, body.magnetizer-index h2 {
@@ -34,16 +35,17 @@ h1, body.magnetizer-index h2 {
 }
 
 h2, body.magnetizer-index h3 {
-    font-size: 1.8em;
+    font-size: 1.7em;
 }
 
 h3 {
-    font-size: 1.6em;
+    font-size: 1.3em;
+    font-weight: 700;
 }
 
-article h1, article h2 {
+article h1, article h2, article h3 {
     line-height: 1.4em;
-    margin-bottom: 0.8em;
+    margin-bottom: 0.5em;
 }
 
 h1 a, h2 a, h3 a {
@@ -52,7 +54,7 @@ h1 a, h2 a, h3 a {
 }
 
 h1 a:hover, h2 a:hover, h3 a:hover {
-    color: #0147fa !important;
+    color: #555 !important;
 }
 
 hr {
@@ -63,6 +65,14 @@ footer a, article a {
     color: #0147fa;
     text-decoration: none;
     border-bottom: 1px solid #0147fa;
+}
+
+a.magnetizer-more::after {
+    content: " →";
+}
+
+a.nav-back::before {
+    content: "← ";
 }
 
 p, ul, ol {
@@ -108,7 +118,10 @@ div#content {
     background: #eceff4;
 }
 
-div#intro { padding: 1em; }
+div#intro { 
+    padding: 1em;
+    font-family: 'Merriweather', serif;
+}
 
 div#intro div {
     max-width: 1000px;
@@ -162,12 +175,13 @@ header {
 }
 
 footer.about {
+    font-family: 'Merriweather', serif;
     margin: 3em auto 3em auto;
     font-size: 0.9em;
     padding: 1.5em;
     color: #333;
     background: #eceff4;
-    line-height: 1.5em;
+    line-height: 1.6em;
     display: flex;
 }
 
@@ -182,29 +196,21 @@ footer.about img {
     margin-right: 1em;
 }
 
-#site-name img {
-   width: 50px;
-   border-radius: 50%;
-   vertical-align: middle;
-   margin: 0 0.5em 0 0;
-}
-
 #site-name h1 {
+    font-family: 'Pacifico', cursive;
     display: inline;
-    font-size: 1.3em;
-    letter-spacing: 0.03em;
-    font-weight: 600;
+    font-size: 1.4em;
+    padding: 0.3em;
 }
 
 #site-name {
     color: #333;
     text-decoration: none;
     display: block;
-    max-width: 800px;
-    margin: 0 auto;
 }
 
 .date {
+    font-family: 'Open Sans', sans-serif;
     font-size: 0.9em;
     color: #666;
     text-transform: uppercase;
@@ -221,9 +227,14 @@ footer.about img {
 }
 
 article {
-    font-size: 1.05em;
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
     padding: 1em;
     line-height: 1.7em;
+}
+
+article img {
+    max-width: 100%;
 }
 
 .magnetizer-article div#latest-articles-header {
@@ -247,13 +258,29 @@ div#read-my-blog {
     display: none;
 }
 
+p.magntetizer-license {
+    margin: 3em 0 0 0;
+    font-size: 0.7em;
+    line-height: 1.4em;
+    color: #666;
+}
+
+p.magntetizer-license a {
+    color: #666;
+    border: none;
+    text-decoration: underline;
+}
+
 @media screen and (min-width: 800px) {
 
     .magnetizer-index #first-screen {
         background: none;
     }
 
-    div#intro { padding: 0; }
+    div#intro {
+        padding: 0;
+        font-weight: 300;
+    }
 
     div#intro div section {
         margin: 0 2em 0 auto;
