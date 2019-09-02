@@ -139,9 +139,7 @@ div#intro p {
 }
 
 div#intro div {
-    max-width: 1000px;
     margin: 0 auto;
-    padding: 2em 0;
     display: flex;
 }
 
@@ -344,5 +342,11 @@ p.magntetizer-license a {
     div#read-my-blog a i {
         padding-right: 0.4em;
     }
+
+    div#intro div {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 2em 0;
+    }    
     
 }
