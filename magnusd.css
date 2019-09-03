@@ -171,7 +171,35 @@ ul.social li a span {
 
 header {
     padding: 0.7em;
+    display: flex;
+    justify-content: space-between;
 }
+
+header nav {
+    font-size: 0.9em;
+    padding: 0.3em;
+}
+
+header nav li {
+    display: inline-block;
+    border-right: 1px solid #333;
+}
+
+header nav li:last-child {
+    border: none;
+}
+
+header nav li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #333;
+    padding: 0.3em 0.6em;
+}
+
+header nav li a:hover {
+    color: #0147fa;
+}
+
 
 footer.about {
     font-family: 'Merriweather', serif;
