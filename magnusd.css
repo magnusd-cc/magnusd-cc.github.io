@@ -72,6 +72,10 @@ a.magnetizer-more::after {
     content: " →";
 }
 
+a.nav-back {
+    margin: 0 1em;
+}
+
 a.nav-back::before {
     content: "← ";
 }
@@ -285,9 +289,9 @@ div#read-my-blog {
 }
 
 p.magntetizer-license {
-    margin: 3em 0 0 0;
-    font-size: 0.7em;
-    line-height: 1.4em;
+    margin: 3em 1em 0 1em;
+    font-size: 0.9em;
+    line-height: 1.7em;
     color: #666;
 }
 
@@ -375,6 +379,17 @@ p.magntetizer-license a {
         max-width: 1000px;
         margin: 0 auto;
         padding: 2em 0;
-    }    
-    
+    }
+
+    p.magntetizer-license {
+        margin: 3em 0 0 0;
+        font-size: 0.7em;
+        line-height: 1.4em;
+        color: #666;
+    }
+
+    a.nav-back {
+        margin: 0;
+    }
+
 }
