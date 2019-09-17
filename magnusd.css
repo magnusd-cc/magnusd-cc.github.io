@@ -43,6 +43,10 @@ h3 {
     font-weight: 700;
 }
 
+a {
+    color: #0147fa;
+}
+
 article h1, article h2, article h3 {
     line-height: 1.4em;
     margin-top: 0.8em;
@@ -236,7 +240,13 @@ footer.about img {
 #site-name {
     color: #333;
     text-decoration: none;
-    display: block;
+    display: flex;
+}
+
+#site-name img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
 }
 
 .date {
