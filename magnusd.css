@@ -48,7 +48,7 @@ a {
 }
 
 article h1, article h2, article h3 {
-    line-height: 1.4em;
+    line-height: 1.5em;
     margin-top: 0.8em;
     margin-bottom: 0.6em;
 }
@@ -76,11 +76,11 @@ a.magnetizer-more::after {
     content: " →";
 }
 
-a.nav-back {
-    margin: 0 1em;
+a.magnetizer-nav-back {
+    margin: 1em 0;
 }
 
-a.nav-back::before {
+a.magnetizer-nav-back::before {
     content: "← ";
 }
 
@@ -90,6 +90,11 @@ p, ul, ol {
 
 article li {
     margin: 0 0 0.5em 3em;
+}
+
+article img.small-right {
+    max-width: 200px;
+    float:right;
 }
 
 strong {
@@ -106,6 +111,22 @@ blockquote {
     margin-left: 2em;
     padding-left: 1em;
     border-left: 1px solid #666;
+}
+
+blockquote.puff {
+    color: #555;
+    border: none;
+    text-align: center;
+    font-size: 1.4em;
+    font-style: italic;
+    margin: 3em 0; 
+    line-height: 1.5em;
+}
+
+blockquote.puff footer {
+    font-size: 0.714em;
+    margin-top: 1em;
+    font-style: normal;
 }
 
 div#container {
