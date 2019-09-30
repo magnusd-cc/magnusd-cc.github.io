@@ -31,15 +31,15 @@ h1, h2, h3 {
 }
 
 h1, body.magnetizer-index h2 {
-    font-size: 2.3em;
+    font-size: 1.6em;
 }
 
 h2, body.magnetizer-index h3 {
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 h3 {
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 700;
 }
 
@@ -77,7 +77,7 @@ a.magnetizer-more::after {
 }
 
 a.magnetizer-nav-back {
-    margin: 1em 0;
+    margin: 1em;
 }
 
 a.magnetizer-nav-back::before {
@@ -93,7 +93,7 @@ article li {
 }
 
 article img.small-right {
-    max-width: 200px;
+    max-width: 150px;
     float:right;
 }
 
@@ -114,6 +114,7 @@ blockquote {
 }
 
 blockquote.puff {
+    padding: 0;
     color: #555;
     border: none;
     text-align: center;
@@ -131,7 +132,6 @@ blockquote.puff footer {
 
 div#container {
     background: #fff;
-    padding: 4em 0 0 0;
 }
 
 div#content {
@@ -143,9 +143,7 @@ div#content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 100vh;
     overflow: hidden;
-    background: #eceff4;
 }
 
 div#intro { 
@@ -158,13 +156,12 @@ div#intro div {
 }
 
 div#intro h1 {
-    line-height: 1.3em;
+    line-height: 1.5em;
     margin-bottom: 0.5em;
-    font-size: 2.5em;
+    font-size: 1.8em;
 }
 
 div#intro p {
-    font-size: 1.2em;
     line-height: 1.5em;
 }
 
@@ -200,13 +197,11 @@ ul.social li a span {
 
 header {
     padding: 0.7em;
-    display: flex;
-    justify-content: space-between;
 }
 
 header nav {
-    font-size: 0.9em;
-    padding: 0.3em;
+    font-size: 0.80em;
+    padding: 1em 0;
 }
 
 header nav li {
@@ -237,7 +232,6 @@ footer.about {
     color: #333;
     background: #eceff4;
     line-height: 1.6em;
-    display: flex;
 }
 
 footer.about p {
@@ -303,11 +297,10 @@ article img {
 }
 
 div#latest-articles-header {
-    background: #fff;
+    background-color: #fff;
     text-align: center;
-    font-size: 1.1em;
+    font-size: 0.9em;
     text-transform: uppercase;
-    margin: 0 0 3em 0;
 }
 
 footer.page-footer {
@@ -334,7 +327,30 @@ p.magntetizer-license a {
 
 @media screen and (min-width: 800px) {
 
+    h1, body.magnetizer-index h2 {
+        font-size: 2.3em;
+    }
+    
+    h2, body.magnetizer-index h3 {
+        font-size: 1.5em;
+    }
+    
+    h3 {
+        font-size: 1.2em;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;    
+    }
+
+    header nav {
+        font-size: 1em;
+        padding: 0.3em;
+    }
+
     .magnetizer-index #first-screen {
+        min-height: 100vh;
         background: none;
     }
 
@@ -347,6 +363,30 @@ p.magntetizer-license a {
         margin: 0 2em 0 auto;
         width: 40%;
     }
+
+    div#intro h1 {
+        line-height: 1.3em;
+        margin-bottom: 0.5em;
+        font-size: 2.5em;
+    }
+    
+    div#intro p {
+        font-size: 1.2em;
+        line-height: 1.5em;
+    }
+
+    div#latest-articles-header {
+        font-size: 1.1em;
+        margin: 0 0 3em 0;
+    }
+
+    div#container {
+        padding: 4em 0 0 0;
+    }
+    
+    article img.small-right {
+        max-width: 200px;
+    }    
 
     .magnetizer-index .parallax {
         perspective: 1px;
@@ -419,8 +459,13 @@ p.magntetizer-license a {
         color: #666;
     }
 
-    a.nav-back {
-        margin: 0;
+    a.magnetizer-nav-back {
+        margin: 0em;
     }
+
+    footer.about {
+        display: flex;
+    }
+    
 
 }
