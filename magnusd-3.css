@@ -348,6 +348,61 @@ img#splash {
     margin-bottom: 2em;
 }
 
+#upsell {
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 48px 24px;
+    background-color: #D8DBE2;
+    text-align: center;
+}
+
+#upsell h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 48px;
+}
+
+#upsell h3 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+#upsell a {
+    color: #000;
+    text-transform: uppercase;
+}
+
+#upsell a:after {
+    content: " →";
+}
+
+#upsell ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1em;
+    line-height: 1.3em;
+}
+
+#upsell li {
+    margin-bottom: 0.5em;
+    list-style-type: none;
+    padding: 1.5em;
+    flex-basis: 25%;
+}
+ 
+#upsell li:nth-child(1) {
+    background-color: #BADCCB;
+}
+
+#upsell li:nth-child(2) {
+    background-color: #F5B799;
+}
+
+#upsell li:nth-child(3) {
+    background-color: #F7C277;
+}
 
 @media screen and (max-width: 1100px) {
 
@@ -364,6 +419,10 @@ img#splash {
         font-size: 0.9em;
         line-height: 1.4em;
         color: #666;
+    }
+
+    #upsell ul {
+        flex-direction: column;
     }
 
 }
