@@ -271,9 +271,8 @@ article img {
 
 #latest-articles-header {
     font-family: 'Roboto Condensed', sans-serif;
-    background-color: #fff;
+    font-size: 1.1em;
     text-align: center;
-    font-size: 0.9em;
     text-transform: uppercase;
     padding: 3em 0;
 }
