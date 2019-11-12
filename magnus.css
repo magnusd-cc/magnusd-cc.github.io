@@ -162,6 +162,27 @@ a.read-my-blog {
     text-align: center;
 }
 
+.available-soon {
+    border-left: 10px solid #FFB400;
+}
+
+.available-now {
+    border-left: 10px solid #7FB800;
+}
+
+.available-soon, .available-now {
+    background-color: #eee;
+    font-size: 0.9em;
+    line-height: 1.5em;
+    padding: 1em 1.5em;
+    margin-bottom: 1em;
+}
+
+.available-soon h3, .available-now h3 {
+    font-size: 1.2em;
+    margin: 0 0 0.3em 0;
+}
+
 p, ul, ol {
     margin-bottom: 0.8em;
 }
