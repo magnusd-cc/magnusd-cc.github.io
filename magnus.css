@@ -171,16 +171,24 @@ a.read-my-blog {
 }
 
 .available-soon, .available-now {
+    font-family: 'Merriweather', serif;
+    text-align: left;
+    max-width: 800px;
     background-color: #eee;
     font-size: 0.9em;
     line-height: 1.5em;
     padding: 1em 1.5em;
-    margin-bottom: 1em;
+    margin: 1em auto;
+}
+
+#upsell .available-soon, #upsell .available-now {
+    margin-bottom: 3em;
 }
 
 .available-soon h3, .available-now h3 {
     font-size: 1.2em;
     margin: 0 0 0.3em 0;
+    text-transform: none !important;
 }
 
 p, ul, ol {
