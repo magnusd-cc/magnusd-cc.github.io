@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html lang="en-GB">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>7 reasons some user stories aren’t useful stories - Magnus Dahlgren</title>
+<link rel="alternate" type="application/rss+xml" href="https://magnusd.cc/atom.xml" />
+<link rel="stylesheet" type="text/css" href="magnus.css?297fa596253c9f0dae36b8d8b0a03c4a">
+<meta name="twitter:card" content="summary_large_image" /><meta name="twitter:site" content="@magnusdahlgren" /><meta name="twitter:title" content="7 reasons some user stories aren’t useful stories - Magnus Dahlgren" /><meta name="twitter:description" content="Simply writing a sentence on the format “As a x, I want to y, so that z” won’t make it a user story. There is a lot more to stories than this. In this article, I will take a look at what some common pitfalls are. 1. Stories that don’t deliver value on their own The goal of any agile process is to de…" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="google-site-verification" content="q8CYPt3pw5aio2Z5oA-VzeUhCfWt0X0sVPKj_f3UH94">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700|Roboto+Condensed:400,700&display=swap" rel="stylesheet">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+        <script>
+            var url = new URL(window.location.href);
+            if (url.searchParams.get("notrack")) {
+                document.cookie = "notrack=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+            } else {
+                if (document.cookie.replace(/(?:(?:^|.*;\s*)notrack\s*\=\s*([^;]*).*$)|^.*$/, "$1") !== "true") {
+                    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        
+                    ga('create', 'UA-145608718-1', 'auto');
+                    ga('send', 'pageview');
+                }
+            }
+        </script>
+        
+    </head> 
+        
+    <body class='magnetizer-article'>
+
+        <header id="main-navigation">
+
+            <a href="/" id="logo">Magnus Dahlgren</a>
+    
+            <nav>
+                <ul>
+                    <li>
+                        <a href='mailto:me@magnusd.cc'>me@magnusd.cc</a>
+                    </li>
+                    <li>
+                        <a href='about-magnus-dahlgren.html'>About / Can I help?</a>
+                    </li>
+                </ul>
+            </nav>
+    
+        </header>
+
+        
+        <header id='blog-header'>
+    <a href='blog-1.html'><h1>Magnus’ Scrum Master Blog</h1></a>
+</header>
+    
+        <section id="articles">
+            <article>
+
+    <h1>7 reasons some user stories aren’t useful stories</h1>
+<p>Simply writing a sentence on the format <em>“As a x, I want to y, so that z”</em> won’t make it a user story. There is a lot more to stories than this.</p>
+<p>In this article, I will take a look at what some common pitfalls are.</p>
+<h2>1. Stories that don’t deliver value on their own</h2>
+<p>The goal of any agile process is to deliver working, demonstrable software frequently. The way we break down our work is incredibly important for our chances of achieving this.</p>
+<p>One of the most common problems I’ve seen with user stories is when they are split in a way where each story <em>on its own</em> has no value.</p>
+<p>This typically happens when stories are glorified technical tasks, rather than focused on delivering business value. For example, this would be the case if we have stories like “implement database layer”, “create controller”, “build front end”, “integration testing”.</p>
+<p>All the tasks in the example above are fundamental to delivering our solution. Which one should the product owner prioritise the highest? We need to complete <em>all</em> of them to deliver anything valuable! We can’t move some of these further down the backlog to return to them if we get time later.</p>
+<p>When stories are split into technical stories like this, there is also a risk of reinforcing silos within our team. First, the database person creates the database. Then someone implements the back-end, after which someone else builds the frontend. Finally, it’s all handed over to the tester for testing. Beware of these little waterfalls sneaking into our “agile” process!</p>
+<h2>2. Stories that are too big</h2>
+<p>When stories are too big, we will struggle to complete them within our sprint (or, if we’re using Kanban, they will sit in the “in progress” column for a long time). The result will be that it takes us longer to get our working, demonstrable software, which in turn means it takes us longer to get feedback. Longer time spent “underwater” increases the risk of us doing the wrong thing.</p>
+<p>While the most obvious, this is not the only problem big stories are likely to cause us.
+A large story is will require more effort when explaining it to others and for them to understand it. It will be harder to create a picture in our heads of what we need to do to complete the story. Estimation becomes harder and (even) more unreliable. Also, our velocity will vary a lot more from sprint to sprint. If we work on a 40-point story and take two sprints to finish it, our velocity will be zero in the first sprint and 40 in the next. This will make it very hard to forecast how long we will need to deliver whatever it is we’re delivering.</p>
+<p>Finally, one of the most important parts of a user story is the <em>discussion</em> it enables us to have. We intentionally keep the documentation light and focus on creating a shared understanding by talking to each other.</p>
+<p>When stories grow, it becomes increasingly hard to remember all the details. Mix-ups, misunderstandings and errors will start sneaking in. To address this, we might feel a need to write down more and more details, sacrificing a shared understanding.</p>
+<p>On the other hand, when we aim for small stories, the simple activity of breaking them down into smaller parts will in itself a good opportunity to have those important discussions we need.</p>
+<h2>3. Too small stories, too soon</h2>
+<p>By now, we have established that it is important that our user stories are not too big. However, this only applies when we are about to bring them into a sprint. Up until then, bigger stories are better.</p>
+<p>This may seem counterintuitive. The more details we know, the better, right? There are several reasons why this isn’t the case.</p>
+<p>The point at which we know the least about our project is at the start of it. That is the worst time to create and commit to detailed requirements.</p>
+<p>Requirements changing as we learn more is not something we should try to avoid. Quite the contrary! In agile we’re trying to maximise this learning and let our requirements evolve. That is one of the big differences compared to more traditional approaches. If we commit too early to a detailed list of requirements, we will significantly limit our agility.</p>
+<p>When a backlog contains hundreds and hundreds of stories, it will require a lot of effort to keep it up to date. Often, this will be a complete waste of time as things will have moved on by the time we get to the stories further down the backlog. Quite possibly, we will end up needing to throw them away and write new stories anyway.</p>
+<p>Finally, if breaking down stories is a way to spread a shared understanding without extensive documentation, this will only ever work if those discussions happen close in time to when we will be working on the implementation of the stories. Otherwise, we will forget what we have been talking about!</p>
+<h2>4. Stories without acceptance criteria</h2>
+<p>Aside from this description a story (which, by the way, could take any shape or form and doesn’t have to be written as “As a…”), there are two more parts to it. Above, we talked about the second part: the conversation, aimed at creating a shared understanding of the story.</p>
+<p>The third part of a story is the <em>tests</em> or acceptance criteria. How will we know when we have completed the story?</p>
+<p>No matter how well we write the story description (and let’s not focus too much on trying to make it perfect), it will never convey all the necessary detail.</p>
+<p>If we write our stories on index cards, as many recommend, we will have the perfect way to manage these acceptance criteria. That is the nice empty backside of the card, where we can scribble them down!</p>
+<p>For instance, if the story on the front of the card is to allow users to choose a password, the acceptance criteria on the back might include that the password is required to be at least 8 characters and contain at least one letter and one digit.</p>
+<p>A simple bullet point list is often all we need. However, we don’t <em>have</em> to limit ourselves to writing and that backside of the index card. Anything that can help us remember the discussions we were having around the story will be useful. For example, a quick mobile photo of a whiteboard where we were sketching up the workflow can be really useful.</p>
+<h2>5. Stories as written specifications</h2>
+<p>An important point to make after the previous one is that our acceptance tests can never replace the important second part of the story, the conversation. Don’t let the product owner or a business analyst create all the acceptance criteria all on their own. The discussions leading to the acceptance criteria are at least as important as the resulting criteria. Let’s discuss the stories together, as a team!</p>
+<p>As Geoff Patten points out in his book User Story Mapping:</p>
+<blockquote>
+<p>Shared documents aren’t shared understanding.</p>
+</blockquote>
+<p>Documents will never deliver value in themselves. What we’re aiming for is to produce working software.</p>
+<p>Some teams have a <em>Definition of Ready</em> where they may specify that for a story to go into a sprint, it needs to have complete and signed off UX mock-ups with a complete set of assets created, all test scenarios written in Gherkin format and so on.</p>
+<p>What they seem to ignore is that such a Definition of Ready is encouraging a level of upfront specification that is similar to a Waterfall process. Committing too soon and in too much detail to what we will do will limit how agile we can be.</p>
+<h2>6. Technical tasks written as user stories</h2>
+<p>All the work necessary to produce working, demonstrable software should be part of the user stories we work on. This work will not only include writing code but also UX, test automation, manual testing, refactoring of code etc.</p>
+<p>However, there will be cases when we have important technical tasks that aren’t part of any user story. For example, let’s say our test server needs an upgrade of the operating system. so that it matches what is on the live servers.</p>
+<p>One way to do this would be to try to express this as a user story and add it to our product backlog:</p>
+<p><em>“As a developer, I want to upgrade the test server to the same version of the operating system that’s running on the live servers, so that we can reliably test our application”.</em> How high up the backlog should the product owner prioritise something like this? They might have no idea!</p>
+<p>When it comes to technical tasks, this is part of the “how” we deliver our work. This is best left to the team to decide, as they will have the necessary knowledge and skills. To be able to do this, however, we need to trust and empower them to use their judgement to set aside the necessary time in the sprint.</p>
+<h2>7. Blaming user stories when our way of working is the problem</h2>
+<p>The final point I want to make is that user stories on their own will never make us agile.</p>
+<p>For example, to be able to rely on the conversations between the team, users and the product owner, we need to be able to have those conversations. If the product owner is not able to set aside a large proportion of their time to spend together with the team or if we’re not allowed to talk to the users, how could we possibly rely on those discussions happening?</p>
+<p>Or let’s say we have a big team and therefore bring in a lot of stories into each sprint. This means we will end up with a lot of details to remember. Memory overload! Particularly as each one of us is only likely to be working just on a few of those stories.</p>
+<p>And, if our team isn’t co-located, relying on being able to have spontaneous discussions and asking questions will be a lot harder.</p>
+<p>Each of these cases will make it more difficult to make user stories work as well as we hope. If this is the case, let’s try and change how we work. Can the Product Owner free up more time to be able to fulfil their responsibilities to the team? Can they maybe delegate the details to the team to work out without them (and accept the conclusions they come to)? And could we split the team in two if it is too big?</p>
+<p>If we are unsuccessful in improving the way we’re working, we are likely to have to rely on more written details for our user stories.</p>
+<p>We’d end up having to sacrifice some of the benefits of user stories but hopefully, we could find a working compromise.</p>
+
+
+    <p class="date">
+        
+    </p>
+
+</article>
+
+<div class="author">
+
+    <img src="magnus-dahlgren-avatar.jpg">
+
+    <p>
+        <time datetime='2017-03-01'>1 March 2017</time> by
+        <a href="freelance-agile-team-coach.html">Magnus&nbsp;Dahlgren</a>
+        
+    </p>
+
+</div>
+<a href="blog-1.html" class="magnetizer-nav-back">Back to blog</a>
+
+
+            
+            
+        </section>
+        
+        <footer class="page-footer">
+
+            <ul class="social">
+
+                <li>
+                    <a href="https://medium.com/@MagnusDahlgren" aria-label="Medium"><i class="fab fa-medium fa-lg"></i><span>Medium</span></a>
+                </li>
+        
+                <li>
+                    <a href="https://twitter.com/magnusdahlgren" aria-label="Twitter"><i class="fab fa-twitter fa-lg"></i><span>Twitter</span></a>
+                </li>
+        
+                <li>
+                    <a href="https://www.instagram.com/its_me_magnus/" aria-label="Instagram"><i class="fab fa-instagram fa-lg"></i><span>Instagram</span></a>
+                </li>
+        
+                <li>
+                    <a href="https://uk.linkedin.com/in/magnusdahlgren" aria-label="Linkedin"><i class="fab fa-linkedin fa-lg"></i><span>Linkedin</span></a>
+                </li>
+        
+            </ul>
+
+            <p>
+                <a href='mailto:me@magnusd.cc'>me@magnusd.cc</a>
+            </p>
+
+        </footer>
+
+    </body>
+
+</html>

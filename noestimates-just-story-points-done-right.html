@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html lang="en-GB">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>#noestimates is just story points done right - Magnus Dahlgren</title>
+<link rel="alternate" type="application/rss+xml" href="https://magnusd.cc/atom.xml" />
+<link rel="stylesheet" type="text/css" href="magnus.css?297fa596253c9f0dae36b8d8b0a03c4a">
+<meta name="twitter:card" content="summary_large_image" /><meta name="twitter:site" content="@magnusdahlgren" /><meta name="twitter:title" content="#noestimates is just story points done right - Magnus Dahlgren" /><meta name="twitter:description" content="Estimation has long been a natural part of software development. Therefore, an approach like #noestimates, which gets rid of estimation can seem quite suspicious. After all, there are good reasons why we estimate. We need to know how long something will take so that we can decide whether it’s worth …" /><meta name="twitter:image" content="https://magnusd.cc/000-noestimates.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="google-site-verification" content="q8CYPt3pw5aio2Z5oA-VzeUhCfWt0X0sVPKj_f3UH94">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700|Roboto+Condensed:400,700&display=swap" rel="stylesheet">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+        <script>
+            var url = new URL(window.location.href);
+            if (url.searchParams.get("notrack")) {
+                document.cookie = "notrack=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+            } else {
+                if (document.cookie.replace(/(?:(?:^|.*;\s*)notrack\s*\=\s*([^;]*).*$)|^.*$/, "$1") !== "true") {
+                    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        
+                    ga('create', 'UA-145608718-1', 'auto');
+                    ga('send', 'pageview');
+                }
+            }
+        </script>
+        
+    </head> 
+        
+    <body class='magnetizer-article'>
+
+        <header id="main-navigation">
+
+            <a href="/" id="logo">Magnus Dahlgren</a>
+    
+            <nav>
+                <ul>
+                    <li>
+                        <a href='mailto:me@magnusd.cc'>me@magnusd.cc</a>
+                    </li>
+                    <li>
+                        <a href='about-magnus-dahlgren.html'>About / Can I help?</a>
+                    </li>
+                </ul>
+            </nav>
+    
+        </header>
+
+        
+        <header id='blog-header'>
+    <a href='blog-1.html'><h1>Magnus’ Scrum Master Blog</h1></a>
+</header>
+    
+        <section id="articles">
+            <article>
+
+    <h1>#noestimates is just story points done right</h1>
+<p><img alt="#noestimates" src="000-noestimates.png" /></p>
+<p>Estimation has long been a natural part of software development. Therefore, an approach like #noestimates, which gets rid of estimation can seem quite suspicious. After all, there are good reasons why we estimate. We need to know how long something will take so that we can decide whether it’s worth doing or how much the customer should be paying. We also want to know whether we are on track to deliver by our deadline, so we need to know how much work is left.</p>
+<h2>What is #noestimates</h2>
+<p>#noestimates is an idea aiming to avoid spending time on estimation when simpler methods can provide a similar or even better result. It’s not one specific method but rather a desire to find ways to make decisions and forecasts without estimation.</p>
+<p>Some interpret this as simply going by gut feeling but the more accepted approach is to use empirical methods. One of the most prominent proponents for #noestimates is Vasco Duarte. I’ll be basing this article on the method described in his book <a href="https://oikosofyseries.com/no-estimates-book-order">No Estimates – How to measure project progress without estimates</a>.</p>
+<p>His method is very simple:</p>
+<ol>
+<li>Do some work</li>
+<li>Measure the progress</li>
+<li>Forecast, based on the rate of progress</li>
+</ol>
+<p>If you’re using story points, you will recognise these steps from what you are already doing. However, compared to using story points, you will notice there is one step missing: estimation. No surprise there as it is a method under the umbrella of #noestimates!</p>
+<h2>Tracking velocity in a #noestimates world</h2>
+<p>The lack of story points might make you uncomfortable. After all, how do we measure velocity and make forecasts without them? The answer is simple: rather than measuring the velocity as the number of story points completed per sprint, measure it as the number of <em>stories</em> completed. Duarte calls this the <em>story velocity</em>.</p>
+<p>Could this work?</p>
+<p>Well, there are a few principles needed for it to work reliably.</p>
+<ol>
+<li>Slice the user stories thinly</li>
+<li>Time-box and prioritise</li>
+<li>Update the forecast frequently</li>
+</ol>
+<p>Let’s look at each one of these in a bit more detail.</p>
+<h2>1. Slice the user stories thinly</h2>
+<p>Duarte recommends trying to make each user story no bigger than two days or, preferably, small enough to fit into half a day or a day’s development effort. The quickest way to know if a story is small enough, he suggests, is simply to ask, “Can you have this done by tomorrow?”.</p>
+<p>This way, all stories will have roughly the same size, so no estimation will be necessary.</p>
+<p>Also, we need to make sure that each story is <em>independent</em> and <em>valuable</em> on its own. This way, we can choose not to implement some stories without impacting the rest of the project.</p>
+<p>One thing to note, however, is that breaking a feature into stories is a waste of time if we decide not to implement that feature or if we get feedback that significantly changes the feature. Rather than breaking down every feature at the start, Duarte uses a second velocity to forecast when features will be delivered: the <em>feature velocity</em>. This measures how many features we deliver per sprint.</p>
+<h2>2. Time-box and prioritise</h2>
+<p>As we have no estimates, we need a way to determine how much things will cost. Duarte suggests using time-boxes for both projects and features.</p>
+<p><strong>Time-box the project.</strong> Rather than estimating the cost, decide how much time we have available to spend. Order the features in the backlog by value. This way, if not all features can be completed, it will be the least valuable stories that are left out.</p>
+<p><strong>Time-box features.</strong> Don’t let any feature take longer than a month. Order the stories within features in priority order. If not all stories are completed, either throw the rest away or move them into a new feature and place it in the backlog based on how valuable it is. This way, the feature velocity will be more reliable and we are likely to be able to drop some low priority stories.</p>
+<h2>3. Update the forecast frequently</h2>
+<p>As #noestimates is a very lightweight way to produce forecasts, it is easy to do frequently. Every week or sprint we can predict when we are likely to be delivering certain features and what we’re likely to have delivered by the deadline.</p>
+<p>This frequent forecasting enables us to manage scope along the way of the project. If we see we’re not on track, we can decide to get rid of low-value features or remove low-value stories from features.</p>
+<h2>Hang on, those are all good principles anyway!</h2>
+<p>The principles above hopefully don’t feel particularly controversial:</p>
+<ul>
+<li><strong>Small stories</strong> is a good idea for many reasons. They will be easier to implement, create a better flow and enable more flexibility and quicker feedback.</li>
+<li><strong>Prioritising features and stories based on value</strong> is hopefully a no-brainer by now.</li>
+<li><strong>Time-box the project</strong> rather than fixing scope allows us to swap features and stories in or out as we learn more, while avoiding expensive death marches.
+<strong> </strong>Time-boxing features** gives us a checkpoint: should we keep adding more capabilities to this feature or is it more valuable to move on to the next one?</li>
+<li><strong>Frequent forecasting</strong> and managing scope along the way is how we avoid unpleasant surprises and can make sure we make the decisions we need to, when we need to.</li>
+</ul>
+<h2>What’s the difference between story points and #noestimates?</h2>
+<p>While #noestimates <em>is</em> a big mind shift from the traditional upfront estimation in days and hours, it is not a huge change if we are already using story points. It’s rather the natural progression, as we strive to establish a flow of small stories. When every story is so small it is one or two story points big, what’s the point of story points?</p>
+<p>Perhaps surprisingly to some, though, #noestimates doesn’t mean <em>no</em> estimates. There are a lot of assumptions that are very much like those we do when estimating:</p>
+<ul>
+<li><strong>When breaking down big stories</strong> into small stories with the goal for them to be no more than a couple of days big, we’re effectively estimating how much effort each story requires. We may not use estimation cards and it may be quick but it is an estimate nevertheless.</li>
+<li><strong>When using our feature velocity</strong>, we make assumptions about the size of features, namely that they will be roughly the same size as each other (using a time-box to make it more likely they are).</li>
+<li><strong>When forecasting</strong>, we assume that the rate of progress will be consistent (perhaps within some interval with a maximum and a minimum value), which requires all things to remain equal. A lot of things affect the rate of progress. The most obvious one being adding or removing (or even swapping!) team members.</li>
+</ul>
+<p>What #noestimates does, rather than eliminating the need for estimates, is to reduce the time spent on estimates.</p>
+<h2>So, which one is better?</h2>
+<p>I wouldn’t go as far as saying #noestimates is better. Story points work well for many teams and is an empirical method too. However, they are not without challenges.</p>
+<p>Even with methods like planning poker, estimation using story points can be time-consuming. Discussions like “It’s a 3! No, it’s a 5!” can go on far too long if we let them.</p>
+<p>It can also be very hard to fully separate the estimation of size and duration when using story points. Still, after 10 years using story points, I often catch myself thinking “this will take someone most of the sprint so it’s a 5”.</p>
+<p>Last but not least, it is easy for story points to get inflated over time, by teams giving stories higher and higher estimates. There is even an incentive for doing so: the velocity will look higher!</p>
+<p>With #noestimates, the way to game the story velocity is to create small stories so that we can ship more of them. This means delivering value quicker. That is certainly something I can live with!</p>
+<p>♻️ <em>I republished this blog post here 22 November 2019 with minimal changes. The date below is when it was originally published on my old blog.</em></p>
+
+
+
+
+    <p class="date">
+        
+    </p>
+
+</article>
+
+<div class="author">
+
+    <img src="magnus-dahlgren-avatar.jpg">
+
+    <p>
+        <time datetime='2017-03-23'>23 March 2017</time> by
+        <a href="freelance-agile-team-coach.html">Magnus&nbsp;Dahlgren</a>
+        
+    </p>
+
+</div>
+<a href="blog-1.html" class="magnetizer-nav-back">Back to blog</a>
+<p class="magntetizer-license"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work by <a xmlns:cc="http://creativecommons.org/ns#" href="https://magnusd.cc/noestimates-just-story-points-done-right.html" property="cc:attributionName" rel="cc:attributionURL">Magnus Dahlgren</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+
+            
+            
+        </section>
+        
+        <footer class="page-footer">
+
+            <ul class="social">
+
+                <li>
+                    <a href="https://medium.com/@MagnusDahlgren" aria-label="Medium"><i class="fab fa-medium fa-lg"></i><span>Medium</span></a>
+                </li>
+        
+                <li>
+                    <a href="https://twitter.com/magnusdahlgren" aria-label="Twitter"><i class="fab fa-twitter fa-lg"></i><span>Twitter</span></a>
+                </li>
+        
+                <li>
+                    <a href="https://www.instagram.com/its_me_magnus/" aria-label="Instagram"><i class="fab fa-instagram fa-lg"></i><span>Instagram</span></a>
+                </li>
+        
+                <li>
+                    <a href="https://uk.linkedin.com/in/magnusdahlgren" aria-label="Linkedin"><i class="fab fa-linkedin fa-lg"></i><span>Linkedin</span></a>
+                </li>
+        
+            </ul>
+
+            <p>
+                <a href='mailto:me@magnusd.cc'>me@magnusd.cc</a>
+            </p>
+
+        </footer>
+
+    </body>
+
+</html>
