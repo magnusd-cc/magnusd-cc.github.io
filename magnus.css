@@ -411,6 +411,22 @@ p.magntetizer-license a {
     margin-bottom: 0.5em;
 }
 
+#intro div.status p {
+    display: inline-block;
+    font-size: 1.2em;
+}
+
+#intro div.status .available {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #7FB800;
+    border-radius: 0.2em;
+}
+
+#intro div.status i.fa-map-marker-alt {
+    color: #9A031E;
+}
+
 img#splash {
     border-radius: 50%;
     width: 300px;
@@ -429,14 +445,7 @@ img#splash {
     font-size: 2.5em;
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 48px;
-}
-
-#upsell h3 {
-    font-size: 1.5em;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-bottom: 0.5em;
+    margin: 24px 0 64px 0;
 }
 
 #upsell a {
@@ -448,30 +457,64 @@ img#splash {
     content: " →";
 }
 
-#upsell ul {
+#home-services {
     display: flex;
     justify-content: space-between;
     font-size: 1.1em;
     line-height: 1.3em;
 }
 
-#upsell li {
+#home-services div {
+    background-color: #fff;
     margin-bottom: 0.5em;
-    list-style-type: none;
-    padding: 1.5em;
-    flex-basis: 25%;
+    flex-basis: 30%;
+    text-align: left;
+}
+
+#home-services div h3 {
+    text-align: center;
+    padding: 1em;
+    line-height: 1.2em;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+#home-services div p {
+    padding: 1em;
+}
+
+#home-services div ul {
+    padding-left: 2.5em;
+}
+
+#home-services h3 {
+    color: #fff;
+}
+
+#home-services h3 i {
+    display:block;
+    color: #fff;
+    font-size: 3em;
+    padding-bottom: 0.3em;
 }
  
-#upsell li:nth-child(1) {
+#home-services-facilitation h3 {
     background-color: #BADCCB;
 }
 
-#upsell li:nth-child(2) {
+#home-services-coaching h3 {
     background-color: #F5B799;
 }
 
-#upsell li:nth-child(3) {
+#home-services-sm h3 {
     background-color: #F7C277;
+}
+
+#status {
+    background-color: #fff;
+    padding: 1em;
 }
 
 @media screen and (max-width: 1100px) {
