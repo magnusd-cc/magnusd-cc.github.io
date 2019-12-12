@@ -77,11 +77,11 @@ h1, h2, h3 {
     font-weight: 300;
 }
 
-h1, body.magnetizer-homepage h2, body.magnetizer-list h2 {
+h1, body.magnetizer-homepage h2, body.magnetizer-listing h2 {
     font-size: 2.3em;
 }
 
-h2, body.magnetizer-homepage h3, body.magnetizer-list h3 {
+h2, body.magnetizer-homepage h3, body.magnetizer-listing h3 {
     font-size: 1.5em;
 }
 
