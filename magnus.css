@@ -35,7 +35,7 @@ body {
     z-index: 100;
 }
 
-.magnetizer-homepage #main-navigation {
+.magnetizer-homepage-page #main-navigation {
     position: absolute;
 }
 
@@ -44,7 +44,7 @@ body {
     text-decoration: none;
 }
 
-.magnetizer-homepage #main-navigation a {
+.magnetizer-homepage-page #main-navigation a {
     color: #D8DBE2;
 }
 
@@ -77,11 +77,11 @@ h1, h2, h3 {
     font-weight: 300;
 }
 
-h1, body.magnetizer-homepage h2, body.magnetizer-listing h2 {
+h1, body.magnetizer-homepage-page h2, body.magnetizer-listing-page h2 {
     font-size: 2.3em;
 }
 
-h2, body.magnetizer-homepage h3, body.magnetizer-listing h3 {
+h2, body.magnetizer-homepage-page h3, body.magnetizer-listing-page h3 {
     font-size: 1.5em;
 }
 
@@ -136,6 +136,12 @@ a.magnetizer-nav-back::before, a.magnetizer-previous::before {
 
 a.magnetizer-more::after, a.magnetizer-next::after, a.read-my-blog::after {
     content: " →";
+}
+
+nav.magnetizer-pagination {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 0 18px
 }
 
 nav.magnetizer-pagination:after {
@@ -237,13 +243,7 @@ blockquote.puff footer {
     font-style: normal;
 }
 
-#articles {
-    max-width: 800px;
-    margin: 0em auto;
-    padding: 0 24px 24px 24px
-}
-
-.magnetizer-homepage #first-screen {
+.magnetizer-homepage-page #first-screen {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -293,6 +293,8 @@ div.author p {
 
 div.author a {
     color: #000;
+    border: none;
+    text-decoration: underline;
 }
 
 .date {
@@ -314,6 +316,9 @@ div.author a {
 
 article {
     font-family: 'Merriweather', serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 18px;
     font-weight: 300;
     line-height: 1.7em;
 }
@@ -687,11 +692,11 @@ img#splash {
         font-size: 1.5em;
     }
 
-    h1, body.magnetizer-homepage h2 {
+    h1, body.magnetizer-homepage-page h2 {
         font-size: 1.7em;
     }
     
-    h2, body.magnetizer-homepage h3 {
+    h2, body.magnetizer-homepage-page h3 {
         font-size: 1.3em;
     }
     
@@ -716,10 +721,6 @@ img#splash {
         margin: 18px;
     }
     
-    #articles {
-        padding: 0 18px 18px 18px;
-    }
-
 }
 
 @media screen and (max-width: 330px) {
