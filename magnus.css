@@ -526,36 +526,36 @@ img#splash {
     background-color: #F7C277;
 }
 
-#home-status {
+.availability-status-include {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 1.2em;
     background-color: #fff;
-    padding: 1.5em;
+    padding: 1em;
     text-align: center;
 }
 
-#home-status a {
+.availability-status-include a {
     text-decoration: none;
     text-transform: uppercase;
 }
 
-#home-status p {
-    padding: 0 1em;
+.availability-status-include p {
+    padding: 0.5em 1em;
     display: inline-block;
     margin-bottom: 0;
 }
 
-#home-status i {
+.availability-status-include i {
     padding-right: 0.3em;
 }
 
-#home-status .available {
+.availability-status-include .available {
     font-weight: 700;
     text-transform: uppercase;
     color: #7FB800;
 }
 
-#home-status .fa-map-marker-alt {
+.availability-status-include .fa-map-marker-alt {
     color: #9A031E;
 }
 
