@@ -829,19 +829,6 @@ ul.certifications strong {
     background-color: var(--subtle-grey-color);
 }
 
-ul.color-swatch {
-    display: flex;
-    margin: 1em 0;
-}
-
-ul.color-swatch li {
-    display: block;
-    list-style: none;
-    width: 150px;
-    line-height: 80px;
-    text-align: center;
-    margin-right: 10px;
-}
 
 @media screen and (max-width: 1100px) {
 
