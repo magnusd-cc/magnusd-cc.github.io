@@ -50,6 +50,7 @@ time, mark, audio, video {
     --padding-wide: 36px;
     --padding-normal: 24px;
     --padding-narrow: 16px;
+    --padding-ultranarrow: 8px;
 
 }
 
@@ -647,13 +648,25 @@ img#splash {
     color: #0e76a8;
 }
 
-.about-page div {
+.about-page section {
     padding: var(--padding-wide);
 }
 
 .about-page h2 {
     margin-bottom: 0.5em;
     text-align: center;
+}
+
+#about-header {
+    padding: 0;
+}
+
+#about-header div {
+    padding: 0;
+}
+
+#about-header img {
+    width: 100%;
 }
 
 ol.big-numbers {
@@ -761,6 +774,25 @@ ul.experience li i.sm {
 ul.experience li i.coach {
     color: var(--green-color);
 }
+
+#about-skills {
+    background: var(--subtle-grey-color);
+}
+
+#about-skills h3 {
+    font-size: var(--font-size-big);
+    text-align: left;
+}
+
+#about-skills ul {
+    margin-top: var(--padding-ultranarrow);
+}
+
+#about-skills ul li {
+    margin-left: var(--padding-wide);
+    margin-bottom: var(--padding-ultranarrow);
+}
+
 
 #about-certifications p {
     font-size: var(--font-size-big);
