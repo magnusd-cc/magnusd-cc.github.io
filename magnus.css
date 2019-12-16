@@ -53,6 +53,23 @@ time, mark, audio, video {
 
 }
 
+.two-columns, .three-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.two-columns .col {
+    width: 49%;
+    list-style: none;
+}
+
+.three-columns .col {
+    width: 32%;
+    list-style: none;
+}
+
+
 body {
     background-color: var(--white-color);
     font-family: var(--main-font-family);
@@ -475,8 +492,6 @@ img#splash {
 }
 
 #home-services {
-    display: flex;
-    justify-content: space-between;
     font-size: var(--font-size-big);
     line-height: 1.3em;
     max-width: 1400px;
@@ -486,7 +501,6 @@ img#splash {
 #home-services div {
     background-color: #fff;
     margin-bottom: 0.5em;
-    flex-basis: 30%;
     text-align: left;
 }
 
@@ -597,20 +611,17 @@ img#splash {
 
 #contact-details p {
     max-width: 900px;
-    margin: 0 auto;
+    margin: var(--padding-normal) auto var(--padding-wide) auto;
     font-size: var(--font-size-bigger);
     line-height: 1.5em;
 }
 
 #contact-details ul {
-    display: flex;
     justify-content: center;
 }
 
 #contact-details li {
     font-size: var(--font-size-bigger);
-    list-style: none;
-    padding: 2em;
 }
 
 #contact-details a {
@@ -648,17 +659,13 @@ img#splash {
 ol.big-numbers {
     list-style: none;
     counter-reset: item-counter;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 ol.big-numbers li {
     counter-increment: item-counter;
-    width: 47.5%;
     font-size: var(--font-size-big);
-    display: flex;
     margin-bottom: 0.6em;
+    display: flex;
 }
 
 ol.big-numbers li::before {
@@ -722,20 +729,6 @@ ol.big-numbers li::before {
     margin: 0 auto;
 }
 
-
-ul.three-cards {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-}
-
-ul.three-cards li {
-    padding: 0.7em;
-    width: 27%;
-    list-style: none;
-    text-align: center;
-}
-
 ul.experience li {
     font-size: var(--font-size-big);
     background-color: var(--white-color);
@@ -754,6 +747,7 @@ ul.experience li i {
 
 ul.experience li p {
     line-height: 1.35em;
+    padding: var(--padding-normal);
 }
 
 ul.experience li i.dev {
@@ -777,9 +771,6 @@ ul.experience li i.coach {
 
 ul.certifications {
     margin: 2em auto 0 auto;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 ul.certifications li {
@@ -797,7 +788,7 @@ ul.certifications li img {
 }
 
 ul.certifications strong {
-    font-size: var(--font-size-bigger);
+    font-size: var(--font-size-big);
 }
 
 #about-facts {
