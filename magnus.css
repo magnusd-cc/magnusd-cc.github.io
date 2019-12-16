@@ -47,6 +47,7 @@ time, mark, audio, video {
     --font-size-small: 16px;
     --font-size-tiny: 14px;
 
+    --padding-ultrawide: 48px;
     --padding-wide: 36px;
     --padding-normal: 24px;
     --padding-narrow: 16px;
@@ -384,7 +385,7 @@ article img {
     font-size: var(--font-size-big);
     text-align: center;
     text-transform: uppercase;
-    padding: var(--padding-wide);
+    padding: var(--padding-ultrawide);
 }
 
 #blog-header {
@@ -600,10 +601,12 @@ img#splash {
 }
 
 #contact-details {
-    padding: 2em;
+    padding: var(--padding-ultrawide);
     text-align: center;
-    border-bottom: 1em solid var(--subtle-grey-color);
+}
 
+.magnetizer-homepage-page #contact-details {
+    border-bottom: var(--padding-ultranarrow) solid var(--subtle-grey-color);
 }
 
 #contact-details h2 {
@@ -658,15 +661,15 @@ img#splash {
 }
 
 #about-header {
-    padding: 0;
+    text-align: center;
 }
 
-#about-header div {
-    padding: 0;
+#about-header h1 {
+    margin-bottom: var(--padding-normal);
 }
 
-#about-header img {
-    width: 100%;
+#about-header p {
+    font-size: var(--font-size-bigger);
 }
 
 ol.big-numbers {
@@ -690,7 +693,6 @@ ol.big-numbers li::before {
 }
 
 #about-referrals {
-    background-color: var(--subtle-grey-color);
     text-align: center;
 }
 
@@ -724,7 +726,7 @@ ol.big-numbers li::before {
 }
 
 #about-experience p.intro {
-    font-size: var(--font-size-even-bigger);
+    font-size: var(--font-size-bigger);
     margin-bottom: 1.5em;
 }
 
