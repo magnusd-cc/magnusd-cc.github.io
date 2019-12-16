@@ -21,8 +21,8 @@ time, mark, audio, video {
 
 :root {
 
-    --main-font-family: 'Merriweather', serif;
-    --accent-font-family: 'Roboto Condensed', sans-serif;
+    --blog-font-family: 'Merriweather', serif;
+    --main-font-family: 'Roboto Condensed', sans-serif;
 
     --black-color: #1B1B1E;
     --white-color: #fff;
@@ -35,28 +35,87 @@ time, mark, audio, video {
     --subtle-grey-color: #D8DBE2;
     --subtle-green-color: #BADCCB;
     --subtle-red-color: #F5B799;
-    --subtle-amber-color-color: #F7C277;
+    --subtle-amber-color: #F7C277;
+
+    --font-size-ridiculous: 74px;
+    --font-size-humongous: 60px;
+    --font-size-huge: 48px;
+    --font-size-even-bigger: 36px;
+    --font-size-bigger: 27px;
+    --font-size-big: 23px;
+    --font-size-normal: 19px;
+    --font-size-small: 16px;
+    --font-size-tiny: 14px;
+
+    --padding-wide: 36px;
+    --padding-normal: 24px;
+    --padding-narrow: 16px;
+
 }
 
 body {
     background-color: var(--white-color);
     font-family: var(--main-font-family);
-    font-size: 1.2em;
+    font-size: var(--font-size-normal);
     color: var(--black-color);
 }
 
-#main-navigation {
-    font-family: var(--accent-font-family);
+h1, h2, h3 {
+    font-weight: 700;
+    text-align: center;
+}
+
+h1 {
+    font-size: var(--font-size-ridiculous);
     text-transform: uppercase;
-    font-size: 1em;
+}
+
+h2 {
+    font-size: var(--font-size-humongous);
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: var(--font-size-huge);
+    text-transform: uppercase;
+}
+
+article {
+    font-family: var(--blog-font-family);
+}
+
+article h1 {
+    font-size: var(--font-size-huge);
+}
+
+article h2 {
+    font-size: var(--font-size-even-bigger);
+}
+
+article h3 {
+    font-size: var(--font-size-big);
+}
+
+.magnetizer-homepage-page article h2, .magnetizer-listing-page h2 {
+    font-size: var(--font-size-huge);
+}
+
+.magnetizer-homepage-page article h3, .magnetizer-listing-page h3 {
+    font-size: var(--font-size-even-bigger);
+}
+
+article h1, article h2, article h3 {
+    text-align: left;
+    font-weight: 300;
+    text-transform: none;
+}
+
+#main-navigation {
+    text-transform: uppercase;
     display: flex;
     justify-content: space-between;
     width: 100%;
     z-index: 100;
-}
-
-.magnetizer-homepage-page #main-navigation {
-    position: absolute;
 }
 
 #main-navigation a {
@@ -64,18 +123,22 @@ body {
     text-decoration: none;
 }
 
+.magnetizer-homepage-page #main-navigation {
+    position: absolute;
+}
+
 .magnetizer-homepage-page #main-navigation a {
     color: var(--subtle-grey-color);
 }
 
 #main-navigation a#logo {
-    font-size: 1.2em;
+    font-size: var(--font-size-bigger);
     font-weight: 700;
-    margin: 24px;
+    margin: var(--padding-normal);
 }
 
 #main-navigation nav ul {
-    margin: 24px;
+    margin: var(--padding-normal);
 }
 
 #main-navigation nav li {
@@ -91,23 +154,6 @@ body {
 #main-navigation nav li:last-child {
     border: none;
     padding-right: 0;
-}
-
-h1, h2, h3 {
-    font-weight: 300;
-}
-
-h1, body.magnetizer-homepage-page h2, body.magnetizer-listing-page h2 {
-    font-size: 2.3em;
-}
-
-h2, body.magnetizer-homepage-page h3, body.magnetizer-listing-page h3 {
-    font-size: 1.5em;
-}
-
-h3 {
-    font-size: 1.2em;
-    font-weight: 700;
 }
 
 a {
@@ -140,7 +186,8 @@ footer a, article a {
 }
 
 a.magnetizer-nav-back, a.magnetizer-more, nav.magnetizer-pagination a, a.read-my-blog {
-    font-family: var(--accent-font-family);
+    font-family: var(--main-font-family);
+    font-size: var(--font-size-big);
     text-transform: uppercase;
     text-decoration: none;
     border: none;
@@ -184,33 +231,7 @@ a.magnetizer-previous {
 
 a.read-my-blog {
     display: block;
-    font-size: 1.2em;
     text-align: center;
-}
-
-.available-now {
-    border-left: 10px solid var(--green-color);
-}
-
-.available-soon, .available-now {
-    font-family: var(--main-font-family);
-    text-align: left;
-    max-width: 800px;
-    background-color: #eee;
-    font-size: 0.9em;
-    line-height: 1.5em;
-    padding: 1em 1.5em;
-    margin: 1em auto;
-}
-
-#upsell .available-soon, #upsell .available-now {
-    margin-bottom: 3em;
-}
-
-.available-soon h3, .available-now h3 {
-    font-size: 1.2em;
-    margin: 0 0 0.3em 0;
-    text-transform: none !important;
 }
 
 p, ul, ol {
@@ -246,14 +267,14 @@ blockquote.puff {
     color: var(--grey-color);
     border: none;
     text-align: center;
-    font-size: 1.4em;
+    font-size: var(--font-size-bigger);
     font-style: italic;
     margin: 3em 0; 
     line-height: 1.5em;
 }
 
 blockquote.puff footer {
-    font-size: 0.714em;
+    font-size: var(--font-size-normal);
     margin-top: 1em;
     font-style: normal;
 }
@@ -285,10 +306,9 @@ ul.social li a span {
 }
 
 div.author {
-    font-family: var(--accent-font-family);
+    font-family: var(--main-font-family);
     text-transform: uppercase;
     margin-bottom: 3em;
-    font-size: 1em;
     line-height: 1.3em;
     display: flex;
     color: var(--grey-color);
@@ -313,8 +333,8 @@ div.author a {
 }
 
 .date {
-    font-family: var(--accent-font-family);
-    font-size: 0.9em;
+    font-family: var(--main-font-family);
+    font-size: var(--font-size-small);
     color: var(--grey-color);
     text-transform: uppercase;
     letter-spacing: 0.07em;
@@ -330,7 +350,7 @@ div.author a {
 }
 
 article {
-    font-family: var(--main-font-family);
+    font-family: var(--blog-font-family);
     max-width: 800px;
     margin: 0 auto;
     padding: 0 18px;
@@ -343,23 +363,21 @@ article img {
 }
 
 #latest-articles-header {
-    font-family: var(--accent-font-family);
-    font-size: 1.1em;
+    font-size: var(--font-size-big);
     text-align: center;
     text-transform: uppercase;
-    padding: 3em 0;
+    padding: var(--padding-wide);
 }
 
 #blog-header {
-    background-color: var(--subtle-amber-color-color);
+    background-color: var(--subtle-amber-color);
     padding: 0.5em 0;
 }
 
 #blog-header h1 {
-    font-size: 4em;
+    font-size: var(--font-size-ridiculous);
     text-transform: uppercase;
     font-weight: 700;
-    font-family: var(--accent-font-family);
     text-align: center;
 }
 
@@ -369,7 +387,6 @@ article img {
 }
 
 footer.page-footer {
-    font-family: var(--accent-font-family);
     padding: 1em 0 2em 0;
     text-align: center;
     text-transform: uppercase;
@@ -380,9 +397,9 @@ div#read-my-blog {
 }
 
 p.magntetizer-license {
-    font-family: var(--accent-font-family);
+    font-family: var(--main-font-family);
     margin: 3em 0 0 0;
-    font-size: 0.7em;
+    font-size: var(--font-size-small);
     line-height: 1.4em;
     color: var(--grey-color);
 }
@@ -400,14 +417,13 @@ p.magntetizer-license a {
     flex-direction: column;
     justify-content:center;
     align-items:center;
-    font-family: var(--accent-font-family);
     height: 100vh;
     background: var(--black-color);
     color: var(--subtle-grey-color);
 }
 
 #first-page .scroll {
-    font-size: 3em;
+    font-size: var(--font-size-humongous);
     position: absolute;
     bottom: 20px;
 }
@@ -421,15 +437,15 @@ p.magntetizer-license a {
 }
 
 #intro h1 {
-    font-size: 4em;
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 0.5em;
 }
 
 #intro h2 {
-    font-size: 2em;
     margin-bottom: 0.5em;
+    font-size: var(--font-size-even-bigger);
+    font-weight: 300;
 }
 
 img#splash {
@@ -440,16 +456,12 @@ img#splash {
 }
 
 #upsell {
-    font-family: var(--accent-font-family);
     padding: 48px 24px;
     background-color: var(--subtle-grey-color);
     text-align: center;
 }
 
 #upsell h2, #contact-details h2 {
-    font-size: 2.5em;
-    font-weight: 700;
-    text-transform: uppercase;
     margin: 24px 0 64px 0;
 }
 
@@ -465,7 +477,7 @@ img#splash {
 #home-services {
     display: flex;
     justify-content: space-between;
-    font-size: 1.1em;
+    font-size: var(--font-size-big);
     line-height: 1.3em;
     max-width: 1400px;
     margin: 0 auto;
@@ -483,15 +495,15 @@ img#splash {
     min-height: 6.3em;
     margin-bottom: 0;
     text-align: center;
-    padding: 1em;
+    padding: var(--padding-normal);
     line-height: 1.2em;
-    font-size: 1.5em;
+    font-size: var(--font-size-even-bigger);
     text-transform: uppercase;
     font-weight: 700;
 }
 
 #home-services .details {
-    padding: 1.5em;
+    padding: var(--padding-normal);
     display: flex;
     flex-direction: column;
 }
@@ -507,15 +519,14 @@ img#splash {
 #home-services h3 i {
     display:block;
     color: #fff;
-    font-size: 3em;
+    font-size: var(--font-size-humongous);
     padding-bottom: 0.3em;
 }
 
 #home-services-read-more {
-    font-family: var(--accent-font-family);
-    font-size: 1.2em;
-    background-color: var(--subtle-amber-color-color);
-    padding: 1.5em;
+    font-size: var(--font-size-bigger);
+    background-color: var(--subtle-amber-color);
+    padding: var(--padding-normal);
     text-align: center;
 }
 
@@ -530,7 +541,7 @@ img#splash {
 }
  
 #home-services-facilitation h3 {
-    background-color: var(--subtle-green-color-color);
+    background-color: var(--subtle-green-color);
 }
 
 #home-services-coaching h3 {
@@ -538,14 +549,13 @@ img#splash {
 }
 
 #home-services-sm h3 {
-    background-color: var(--subtle-amber-color-color);
+    background-color: var(--subtle-amber-color);
 }
 
 .availability-status-include {
-    font-family: var(--accent-font-family);
-    font-size: 1.2em;
+    font-size: var(--font-size-big);
     background-color: #fff;
-    padding: 1em;
+    padding: 0.5em !important;
     text-align: center;
 }
 
@@ -575,7 +585,6 @@ img#splash {
 }
 
 #contact-details {
-    font-family: var(--accent-font-family);
     padding: 2em;
     text-align: center;
     border-bottom: 1em solid var(--subtle-grey-color);
@@ -589,7 +598,7 @@ img#splash {
 #contact-details p {
     max-width: 900px;
     margin: 0 auto;
-    font-size: 1.2em;
+    font-size: var(--font-size-bigger);
     line-height: 1.5em;
 }
 
@@ -599,7 +608,7 @@ img#splash {
 }
 
 #contact-details li {
-    font-size: 1.3em;
+    font-size: var(--font-size-bigger);
     list-style: none;
     padding: 2em;
 }
@@ -610,13 +619,13 @@ img#splash {
 }
 
 #contact-details a i {
-    font-size: 2em;
+    font-size: var(--font-size-even-bigger);
     vertical-align: middle;
     padding-right: 0.15em;
 }
 
 #contact-details a .fa-envelope {
-    color: var(--subtle-amber-color-color);
+    color: var(--subtle-amber-color);
 }
 
 #contact-details a .fa-twitter {
@@ -627,19 +636,11 @@ img#splash {
     color: #0e76a8;
 }
 
-
-.about-page {
-    font-family: var(--accent-font-family);
-}
-
 .about-page div {
-    padding: 2em;
+    padding: var(--padding-wide);
 }
 
 .about-page h2 {
-    font-size: 3em;
-    font-weight: 700;
-    text-transform: uppercase;
     margin-bottom: 0.5em;
     text-align: center;
 }
@@ -649,22 +650,20 @@ ol.big-numbers {
     counter-reset: item-counter;
     display: flex;
     flex-wrap: wrap;
-    max-width: 900px;
-    margin: 0 auto;
     justify-content: space-between;
 }
 
 ol.big-numbers li {
     counter-increment: item-counter;
     width: 47.5%;
-    font-size: 1.3em;
+    font-size: var(--font-size-big);
     display: flex;
     margin-bottom: 0.6em;
 }
 
 ol.big-numbers li::before {
     content: "0" counter(item-counter);
-    font-size: 2em;
+    font-size: var(--font-size-huge);
     line-height: 1em;
     font-weight: 700;
     margin-right: 0.3em;
@@ -678,60 +677,77 @@ ol.big-numbers li::before {
 #about-referrals .fa-user-circle {
     color: var(--blue-color);
     display: block;
-    font-size: 7em;
+    font-size: 200px;
 }
 
 #about-referrals blockquote {
-    font-family: var(--main-font-family);
+    font-family: var(--blog-font-family);
     max-width: 900px;
     margin: 0.5em auto 0 auto;
-    font-size: 1.6em;
+    font-size: var(--font-size-even-bigger);
     line-height: 1.6em;
     border: none;
     font-style: italic;
 }
 
 #about-referrals blockquote footer {
-    font-family: var(--accent-font-family);
+    font-family: var(--main-font-family);
     font-style: normal;
     margin-top: 0.7em;
-    font-size: 0.7em;
+    font-size: var(--font-size-normal);
     color: var(--black-color)
 }
 
 #about-experience {
-    background-color: var(--subtle-amber-color-color);
+    background-color: var(--subtle-amber-color);
     text-align: center;
 }
 
 #about-experience p.intro {
-    font-size: 1.5em;
+    font-size: var(--font-size-even-bigger);
     margin-bottom: 1.5em;
 }
 
-ul.experience {
-    display: flex;
-    justify-content: space-between;
+.container-full-width {
+    width: 100%;
+}
+
+.container-wide-width {
     max-width: 1000px;
     margin: 0 auto;
 }
 
-ul.experience li {
-    font-size:1.2em;
-    background-color: var(--white-color);
+.container-normal-width {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+ul.three-cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+ul.three-cards li {
     padding: 0.7em;
     width: 27%;
     list-style: none;
     text-align: center;
 }
 
+ul.experience li {
+    font-size: var(--font-size-big);
+    background-color: var(--white-color);
+}
+
 ul.experience li h3 {
-    font-size: 1.3em;
+    font-size: var(--font-size-bigger);
     margin-bottom: 0.8em;
 }
 
 ul.experience li i {
-    font-size: 5em;
+    font-size: var(--font-size-ridiculous);
     display: block;
     margin: 0.7em auto;
 }
@@ -753,15 +769,13 @@ ul.experience li i.coach {
 }
 
 #about-certifications p {
-    font-size: 1.3em;
+    font-size: var(--font-size-big);
     line-height: 1.5em;
-    max-width: 1000px;
     margin: 0 auto;
     text-align: center;
 }
 
 ul.certifications {
-    max-width: 900px;
     margin: 2em auto 0 auto;
     list-style: none;
     display: flex;
@@ -783,11 +797,25 @@ ul.certifications li img {
 }
 
 ul.certifications strong {
-    font-size: 1.1em;
+    font-size: var(--font-size-bigger);
 }
 
 #about-facts {
     background-color: var(--subtle-grey-color);
+}
+
+ul.color-swatch {
+    display: flex;
+    margin: 1em 0;
+}
+
+ul.color-swatch li {
+    display: block;
+    list-style: none;
+    width: 150px;
+    line-height: 80px;
+    text-align: center;
+    margin-right: 10px;
 }
 
 @media screen and (max-width: 1100px) {
