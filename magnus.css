@@ -21,8 +21,8 @@ time, mark, audio, video {
 
 :root {
 
-    --blog-font-family: 'Merriweather', serif;
     --main-font-family: 'Roboto Condensed', sans-serif;
+    --blog-font-family: 'Merriweather', serif;
 
     --black-color: #1B1B1E;
     --white-color: #fff;
@@ -90,6 +90,7 @@ h1 {
 
 h2 {
     font-size: var(--font-size-humongous);
+    margin-bottom: var(--padding-ultrawide);
 }
 
 h3 {
@@ -142,11 +143,12 @@ article h3 {
     font-size: var(--font-size-even-bigger);
 }
 
-section {
+section.flashy {
+    padding: var(--padding-ultrawide);
     text-align: center;
 }
 
-section li {
+section.flashy li {
     text-align: left;
 }
 
@@ -444,13 +446,7 @@ img#splash {
 }
 
 #upsell {
-    padding: 48px 24px;
     background-color: var(--subtle-grey-color);
-    text-align: center;
-}
-
-#upsell h2, #contact-details h2 {
-    margin: 24px 0 64px 0;
 }
 
 #upsell a {
@@ -578,10 +574,6 @@ img#splash {
     border-bottom: var(--padding-ultranarrow) solid var(--subtle-grey-color);
 }
 
-#contact-details h2 {
-    margin-bottom: 0.5em;
-}
-
 #contact-details p {
     max-width: 900px;
     margin: var(--padding-normal) auto var(--padding-wide) auto;
@@ -618,15 +610,6 @@ img#splash {
 
 #contact-details a .fa-linkedin {
     color: #0e76a8;
-}
-
-.about-page section {
-    padding: var(--padding-wide);
-}
-
-.about-page h2 {
-    margin-bottom: 0.5em;
-    text-align: center;
 }
 
 #about-header {
