@@ -80,27 +80,46 @@ body {
 }
 
 h1, h2, h3 {
+    text-transform: uppercase;
     font-weight: 700;
-    text-align: center;
 }
 
 h1 {
     font-size: var(--font-size-ridiculous);
-    text-transform: uppercase;
 }
 
 h2 {
     font-size: var(--font-size-humongous);
-    text-transform: uppercase;
 }
 
 h3 {
     font-size: var(--font-size-huge);
-    text-transform: uppercase;
+}
+
+a {
+    color: var(--main-link-color);
+}
+
+strong {
+    font-weight: 600;
+}
+
+em {
+    font-style: italic;
 }
 
 article {
     font-family: var(--blog-font-family);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 18px;
+    font-weight: 300;
+    line-height: 1.7em;
+}
+
+article h1, article h2, article h3 {
+    text-transform: none;
+    font-weight: 300;
 }
 
 article h1 {
@@ -121,12 +140,6 @@ article h3 {
 
 .magnetizer-homepage-page article h3, .magnetizer-listing-page h3 {
     font-size: var(--font-size-even-bigger);
-}
-
-article h1, article h2, article h3 {
-    text-align: left;
-    font-weight: 300;
-    text-transform: none;
 }
 
 #main-navigation {
@@ -175,10 +188,6 @@ article h1, article h2, article h3 {
     padding-right: 0;
 }
 
-a {
-    color: var(--main-link-color);
-}
-
 article h1, article h2, article h3 {
     line-height: 1.5em;
     margin-top: 0.8em;
@@ -192,10 +201,6 @@ h1 a, h2 a, h3 a {
 
 h1 a:hover, h2 a:hover, h3 a:hover {
     color: var(--grey-color) !important;
-}
-
-hr {
-    width: 100vw;
 }
 
 footer a, article a {
@@ -266,36 +271,11 @@ article img.small-right {
     float:right;
 }
 
-strong {
-    font-weight: 600;
-}
-
-em {
-    font-style: italic;
-}
-
 blockquote {
     margin-bottom: 0.8em;
     margin-left: 2em;
     padding-left: 1em;
     border-left: 1px solid var(--grey-color);
-}
-
-blockquote.puff {
-    padding: 0;
-    color: var(--grey-color);
-    border: none;
-    text-align: center;
-    font-size: var(--font-size-bigger);
-    font-style: italic;
-    margin: 3em 0; 
-    line-height: 1.5em;
-}
-
-blockquote.puff footer {
-    font-size: var(--font-size-normal);
-    margin-top: 1em;
-    font-style: normal;
 }
 
 .magnetizer-homepage-page #first-screen {
@@ -359,23 +339,6 @@ div.author a {
     letter-spacing: 0.07em;
     margin: 1.5em 0 2em 0;
 }
-.date a {
-    color: #666;
-    border: none;
-}
-
-.date a:hover {
-    color: var(--main-link-color);  
-}
-
-article {
-    font-family: var(--blog-font-family);
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 18px;
-    font-weight: 300;
-    line-height: 1.7em;
-}
 
 article img {
     max-width: 100%;
@@ -417,10 +380,10 @@ div#read-my-blog {
 
 p.magntetizer-license {
     font-family: var(--main-font-family);
-    margin: 3em 0 0 0;
     font-size: var(--font-size-small);
-    line-height: 1.4em;
     color: var(--grey-color);
+    line-height: 1.4em;
+    margin: 3em 0 0 0;
 }
 
 p.magntetizer-license a {
@@ -456,14 +419,12 @@ p.magntetizer-license a {
 }
 
 #intro h1 {
-    font-weight: 700;
-    text-transform: uppercase;
     margin-bottom: 0.5em;
 }
 
 #intro h2 {
-    margin-bottom: 0.5em;
     font-size: var(--font-size-even-bigger);
+    margin-bottom: 0.5em;
     font-weight: 300;
 }
 
@@ -703,10 +664,10 @@ ol.big-numbers li::before {
 }
 
 #about-referrals blockquote {
+    font-size: var(--font-size-even-bigger);
     font-family: var(--blog-font-family);
     max-width: 900px;
     margin: 0.5em auto 0 auto;
-    font-size: var(--font-size-even-bigger);
     line-height: 1.6em;
     border: none;
     font-style: italic;
@@ -722,7 +683,6 @@ ol.big-numbers li::before {
 
 #about-experience {
     background-color: var(--subtle-amber-color);
-    text-align: center;
 }
 
 #about-experience p.intro {
@@ -794,7 +754,6 @@ ul.experience li i.coach {
     margin-left: var(--padding-wide);
     margin-bottom: var(--padding-ultranarrow);
 }
-
 
 #about-certifications p {
     font-size: var(--font-size-big);
