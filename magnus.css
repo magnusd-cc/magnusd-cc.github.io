@@ -449,15 +449,6 @@ img#splash {
     background-color: var(--subtle-grey-color);
 }
 
-#upsell a {
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-#upsell a:after {
-    content: " →";
-}
-
 #home-services {
     font-size: var(--font-size-big);
     line-height: 1.3em;
@@ -565,11 +556,6 @@ img#splash {
     color: var(--red-color);
 }
 
-#contact-details {
-    padding: var(--padding-ultrawide);
-    text-align: center;
-}
-
 .magnetizer-homepage-page #contact-details {
     border-bottom: var(--padding-ultranarrow) solid var(--subtle-grey-color);
 }
@@ -612,10 +598,6 @@ img#splash {
     color: #0e76a8;
 }
 
-#about-header {
-    text-align: center;
-}
-
 #about-header h1 {
     margin-bottom: var(--padding-normal);
 }
@@ -642,10 +624,6 @@ ol.big-numbers li::before {
     line-height: 1em;
     font-weight: 700;
     margin-right: 0.3em;
-}
-
-#about-referrals {
-    text-align: center;
 }
 
 #about-referrals .fa-user-circle {
