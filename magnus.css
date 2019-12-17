@@ -458,7 +458,6 @@ img#splash {
 
 #home-services div {
     background-color: #fff;
-    margin-bottom: 0.5em;
     text-align: left;
 }
 
@@ -762,6 +761,14 @@ ul.certifications strong {
 
     .two-columns .col, .three-columns .col {
         width: 100%;
+    }
+
+    .card {
+        margin-bottom: var(--padding-normal);
+    }
+
+    section.flashy {
+        padding: var(--padding-normal);
     }
 
     #blog-header h1 {
