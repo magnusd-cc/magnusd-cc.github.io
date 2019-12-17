@@ -462,17 +462,6 @@ img#splash {
     text-align: left;
 }
 
-#home-services h3 {
-    color: #fff;
-    min-height: 6.3em;
-    margin-bottom: 0;
-    text-align: center;
-    padding: var(--padding-normal);
-    line-height: 1.2em;
-    font-size: var(--font-size-even-bigger);
-    text-transform: uppercase;
-    font-weight: 700;
-}
 
 #home-services .details {
     padding: var(--padding-normal);
@@ -486,13 +475,6 @@ img#splash {
 
 #home-services li {
     padding-bottom: 0.4em;
-}
-
-#home-services h3 i {
-    display:block;
-    color: #fff;
-    font-size: var(--font-size-humongous);
-    padding-bottom: 0.3em;
 }
 
 #home-services-read-more {
@@ -510,18 +492,6 @@ img#splash {
 
 #home-services-read-more i {
     padding: 0 0.5em;
-}
- 
-#home-services-facilitation h3 {
-    background-color: var(--subtle-green-color);
-}
-
-#home-services-coaching h3 {
-    background-color: var(--subtle-red-color);
-}
-
-#home-services-sm h3 {
-    background-color: var(--subtle-amber-color);
 }
 
 .availability-status-include {
@@ -554,10 +524,6 @@ img#splash {
 
 .availability-status-include .fa-map-marker-alt {
     color: var(--red-color);
-}
-
-.magnetizer-homepage-page #contact-details {
-    border-bottom: var(--padding-ultranarrow) solid var(--subtle-grey-color);
 }
 
 #contact-details p {
@@ -596,6 +562,21 @@ img#splash {
 
 #contact-details a .fa-linkedin {
     color: #0e76a8;
+}
+
+#about-help {
+}
+
+#about-help p {
+    font-size: var(--font-size-bigger);
+}
+
+#about-blog {
+    background: var(--subtle-amber-color);
+}
+
+#about-services {
+    background-color: var(--subtle-amber-color);
 }
 
 #about-header h1 {
@@ -673,24 +654,24 @@ ol.big-numbers li::before {
     margin: 0 auto;
 }
 
-ul.experience li {
+.card {
     font-size: var(--font-size-big);
     background-color: var(--white-color);
-    text-align: center;
+    text-align: center !important;
 }
 
-ul.experience li h3 {
-    font-size: var(--font-size-bigger);
-    margin-bottom: 0.8em;
-}
-
-ul.experience li i {
+.card i {
     font-size: var(--font-size-ridiculous);
     display: block;
-    margin: 0.7em auto;
+    padding: var(--padding-ultrawide);
 }
 
-ul.experience li p {
+.card h3 {
+    text-transform: none;
+    font-size: var(--font-size-bigger);
+}
+
+.card div {
     line-height: 1.35em;
     padding: var(--padding-normal);
 }
@@ -707,9 +688,7 @@ ul.experience li i.coach {
     color: var(--green-color);
 }
 
-#about-skills {
-    background: var(--subtle-grey-color);
-}
+#about-skills { }
 
 #about-skills h3 {
     font-size: var(--font-size-big);
