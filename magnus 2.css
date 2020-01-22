@@ -128,7 +128,7 @@ article h1 {
 }
 
 article h2 {
-    font-size: var(--font-size-even-bigger);
+    font-size: var(--font-size-bigger);
 }
 
 article h3 {
