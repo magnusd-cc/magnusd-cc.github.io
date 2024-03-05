@@ -1,0 +1,161 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto Slab', serif;
+  font-size: 18px;
+  color: #333;
+}
+
+header {
+  background: #000;
+  color: #F4FFFDFF;
+  padding: 0.8em;
+}
+
+header #site-logo {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+header #site-logo i {
+  margin-right: 0.3em;
+}
+
+header a {
+  color: #F4FFFDFF;
+  border: none;
+}
+
+main {
+  padding: 50px 5%;
+  max-width: 800px;
+  margin: auto;
+}
+
+h1, h2 {
+  font-weight: normal;
+  color: #333;
+  margin: 0.5em 0 0.5em 0;
+}
+
+h1 {
+  font-size: 1.4em;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+strong {
+  font-weight: 600;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Links styling */
+a {
+  color: #005A9C;
+  text-decoration: none;
+  border-bottom: 1px solid #005A9C;
+}
+
+a:hover {
+}
+
+article {
+  margin-bottom: 40px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+ul {
+  list-style-type: disc;
+  margin-bottom: 1.2em;
+}
+
+li {
+  margin-left: 2em;
+  margin-bottom: 0.7em;
+}
+
+/* Footer styling */
+footer {
+  background-color: #141414;
+  color: #F4FFFDFF;
+  padding: 0.7em;
+  margin-top: 40px;
+}
+
+footer a {
+  color: #F4FFFDFF;
+  border-bottom: none;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+footer li {
+  display: inline-block;
+  padding: 0.1em 0.4em;
+  margin: 0;
+}
+
+#f-linkedin span {
+  display: none;
+}
+
+#f-linkedin {
+  border-right: 1px solid #F4FFFDFF;
+}
+
+#f-privacy {
+  float: right;
+}
+
+
+.avatar {
+  width: 200px;
+  border-radius: 50%;
+  margin-bottom: 1.5em;
+}
+
+@media (max-width: 768px) {
+  header #site-logo {
+    font-size: 20px;
+  }
+
+  main {
+    padding: 40px 5%;
+  }
+}
+
