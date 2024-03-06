@@ -8,10 +8,17 @@
 
     <script src="https://getinsights.io/js/insights.js"></script>
     <script>
-      insights.init('V5J4RBprpVIa01zy');
-      insights.trackPages();
-    </script>
-    
+      var url = new URL(window.location.href);
+      if (url.searchParams.get("notrack")) {
+        document.cookie = "notrack=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+      } else {
+        if (document.cookie.replace(/(?:(?:^|.*;\s*)notrack\s*\=\s*([^;]*).*$)|^.*$/, "$1") !== "true") {
+          insights.init('V5J4RBprpVIa01zy');
+          insights.trackPages();
+        }
+      }
+      </script>
+
     <script src="https://kit.fontawesome.com/8f6c15a092.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
