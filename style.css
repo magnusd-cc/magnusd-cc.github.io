@@ -29,24 +29,47 @@ body, html {
   color: #333;
 }
 
-header {
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background: #000;
   color: #F4FFFDFF;
   padding: 0.8em;
 }
 
-header #site-logo {
+.site-header a {
+  color: #F4FFFDFF;
+  border: none;
+}
+
+#site-logo {
   font-size: 24px;
   font-weight: 400;
 }
 
-header #site-logo i {
+#sitelogo i {
   margin-right: 0.3em;
 }
 
-header a {
-  color: #F4FFFDFF;
-  border: none;
+.site-nav ul {
+  margin: 0;
+}
+
+.site-nav li {
+    display: inline-block;
+    border-right: 1px solid #F4FFFDFF;
+    padding: 0.1em 0.5em;
+    margin: 0;
+}
+
+.site-nav li:first-child {
+    padding-left: 0;
+}
+
+.site-nav li:last-child {
+    border: none;
+    padding-right: 0;
 }
 
 main {
