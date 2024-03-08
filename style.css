@@ -172,6 +172,10 @@ footer li {
   margin-bottom: 1.5em;
 }
 
+.hero-image {
+  width: 100%;
+}
+
 @media (max-width: 768px) {
   header #site-logo {
     font-size: 20px;
