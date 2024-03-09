@@ -3,16 +3,20 @@
 <html lang="en-GB">
 
     <head>
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
         <title>Working with Magnus - Magnus Dahlgren</title>
 <link rel="alternate" type="application/rss+xml" href="https://magnusd.cc/atom.xml" />
-<link rel="stylesheet" type="text/css" href="magnus.css?270c4a26d7de9cebf8665c955095fdf2">
-<meta name="twitter:card" content="summary_large_image" /><meta name="twitter:site" content="@magnusdahlgren" /><meta name="twitter:title" content="Working with Magnus - Magnus Dahlgren" /><meta name="twitter:description" content="This page is intended as an example of what information you may choose to include on a “Working With Me” page <a href='#1'>[1]</a>, as well as my real life Working With Me page. Basic facts about me I live in London, UK (Whitechapel, to be more precise) I mainly work from a co-working space near Aldgate My language…" /><meta name="twitter:image" content="https://magnusd.cc/working-with-magnus.jpg" />
+<link rel="stylesheet" type="text/css" href="style.css?7d645662629d219b2f670a6f73ca9747">
+<meta name="twitter:card" content="summary_large_image" /><meta name="twitter:site" content="@magnusdahlgren" /><meta name="twitter:title" content="Working with Magnus - Magnus Dahlgren" /><meta name="twitter:description" content="Basic facts about me I live in London, UK (Whitechapel, to be more precise) I mainly work from a co-working space near Aldgate My languages: English, Swedish and a tiny bit of German Why I work remotely: I enjoy the flexibility. Plus it’s a really exciting area as an agile coach when so many argue t…" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="google-site-verification" content="q8CYPt3pw5aio2Z5oA-VzeUhCfWt0X0sVPKj_f3UH94">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700|Roboto+Condensed:400,700&display=swap" rel="stylesheet">
 
+        <script src="https://kit.fontawesome.com/8f6c15a092.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="google-site-verification" content="0ZcHcumgl0OzgmRxQQ9ws3bCKNw-X2btkwH0GTMZwK0" />
+    
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -21,53 +25,37 @@
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
 
-        <script>
-            var url = new URL(window.location.href);
-            if (url.searchParams.get("notrack")) {
-                document.cookie = "notrack=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
-            } else {
-                if (document.cookie.replace(/(?:(?:^|.*;\s*)notrack\s*\=\s*([^;]*).*$)|^.*$/, "$1") !== "true") {
-                    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-        
-                    ga('create', 'UA-145608718-1', 'auto');
-                    ga('send', 'pageview');
-                }
-            }
-        </script>
-        
-    </head> 
+    </head>
         
     <body class='magnetizer-static-page'>
 
-        <header id="main-navigation">
-
-            <a href="/" id="logo">Magnus Dahlgren</a>
-    
-            <nav>
-                <ul>
-                    <li>
-                        <a href='/'>Home</a>
-                    </li>
-                    <li>
-                        <a href='/about.html'>About</a>
-                    </li>
-                    <li>
-                        <a href='/about.html#contact'>Contact</a>
-                    </li>
-                </ul>
-            <nav>            
-
-        </header>
+    <header class="site-header">
+        <a href="/" class="site-logo">
+            <i class="fa-solid fa-arrow-trend-up"></i>
+            Magnus Dahlgren
+        </a>
+        <nav class="site-nav">
+            <ul>
+            <li>
+                <a href='/'>Home</a>
+            </li>
+            <li>
+                <a href='blog-1.html'>Blog</a>
+            </li>
+            <li>
+                <a href='about.html'>About</a>
+            </li>                    
+            <li>
+                <a href='about.html#contact'>Contact</a>
+            </li>
+            </ul>      
+        </nav>
+    </header>
 
 <main>
     <article class='article-item'>
 
     <h1>Working with Magnus</h1>
-<p><img alt="Working with Magnus" src="working-with-magnus.jpg" /></p>
-<p><em>This page is intended as an example of what information you may choose to include on a “Working With Me” page <a href='#1'>[1]</a>, as well as my real life Working With Me page.</em></p>
 <h2>Basic facts about me</h2>
 <ul>
 <li>I live in London, UK (Whitechapel, to be more precise)</li>
@@ -83,7 +71,7 @@
 </ul>
 <h2>The best ways to communicate with me</h2>
 <ul>
-<li><strong>Slack</strong> is my preferred option for quick messages. Just don’t <code>@mention</code> me, please, unless you need me to drop what I’m doing. <a href='#2'>[2]</a></li>
+<li><strong>Slack</strong> is my preferred option for quick messages. Just don’t <code>@mention</code> me, please, unless you need me to drop what I’m doing. <a href='#1'>[1]</a></li>
 <li><strong>Video calls</strong> are great for discussing things! Please give me a heads up so I can go somewhere where I don’t disturb those around me.</li>
 <li><strong>Email</strong> is good for information sharing. Please note that I have my notifications turned off and only read emails between tasks, so choose another method if you need an urgent answer.</li>
 <li><strong>Text me</strong> if something is urgent. And be aware I won’t answer my phone unless we have a pre-arranged call. Again, text me if it’s urgent.</li>
@@ -127,8 +115,7 @@
 <li>I’m genuinely bad with names and faces. Please don’t take it personally! I’m trying my best.</li>
 <li>I’m not great at networking. At meetups, I stuff my face with pizza as soon as the talks finish and make a quick exit. </li>
 </ul>
-<p><a id='1'></a>[1]: For more information and inspiratior for Working With Me pages, see <a href="https://medium.com/@mcleanonline/helping-other-people-get-to-know-you-aa2dbff5c0f8">this nice collection</a> by Richard McLean.</p>
-<p><a id='2'></a>[2]: Pro tip when using Slack: Don’t send a <code>hi @magnus</code> to someone and then spend 3 minutes typing the next message while they have to sit there waiting. Merge the two into one message instead!</p>
+<p><a href='#1'>[1]</a> Pro tip when using Slack: Don’t send a <code>hi @magnus</code> to someone and then spend 3 minutes typing the next message while they have to sit there waiting. Merge the two into one message instead.</p>
 
 
     <p class="date">
@@ -141,34 +128,13 @@
 </article>
 </main>
         
-        <footer class="page-footer">
+    <footer>
+        <ul>
+            <li id="f-linkedin"><a href="https://uk.linkedin.com/in/magnusdahlgren"><i class="fa-brands fa-linkedin-in"></i> <span>Linkedin<span></a></li>
+            <li id="f-email"><a href="mailto:me@magnusd.cc"><i class="fa-regular fa-envelope"></i> <span>me@magnusd.cc</span></a></li>
+            
+        </ul>
+    </footer>
 
-            <ul class="social">
-
-                <li>
-                    <a href="https://medium.com/@MagnusDahlgren" aria-label="Medium"><i class="fab fa-medium fa-lg"></i><span>Medium</span></a>
-                </li>
-        
-                <li>
-                    <a href="https://twitter.com/magnusdahlgren" aria-label="Twitter"><i class="fab fa-twitter fa-lg"></i><span>Twitter</span></a>
-                </li>
-        
-                <li>
-                    <a href="https://www.instagram.com/its_me_magnus/" aria-label="Instagram"><i class="fab fa-instagram fa-lg"></i><span>Instagram</span></a>
-                </li>
-        
-                <li>
-                    <a href="https://uk.linkedin.com/in/magnusdahlgren" aria-label="Linkedin"><i class="fab fa-linkedin fa-lg"></i><span>Linkedin</span></a>
-                </li>
-        
-            </ul>
-
-            <p>
-                <a href='mailto:me@magnusd.cc'>me@magnusd.cc</a>
-            </p>
-
-        </footer>
-
-    </body>
-
+  </body>
 </html>
