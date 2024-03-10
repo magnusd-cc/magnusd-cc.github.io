@@ -37,7 +37,7 @@
             } else {
                 if (document.cookie.replace(/(?:(?:^|.*;\s*)notrack\s*\=\s*([^;]*).*$)|^.*$/, "$1") !== "true") {
                     if (url.hostname == "magnusd.cc") {
-                        insights.trackPages();
+                        // insights.trackPages();
                         track = true;
                         alert("Tracked page view");
                     } else {
@@ -52,7 +52,7 @@
                 if (x.style.display === "none" || x.style.display === "") {
                     x.style.display = "block";
                     if (track && trackMenuInteraction) {
-                        alert("Track menu interaction");
+                        alert("Track menu interaction and disable");
                         trackMenuInteraction = false;
                     }
                 } else {
