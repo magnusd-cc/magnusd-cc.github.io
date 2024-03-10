@@ -111,6 +111,24 @@ strong {
   font-weight: 600;
 }
 
+em {
+  font-style: italic;
+}
+
+code {
+  display: block;
+  font-family: monospace;
+  margin-bottom: 20px;
+  padding: 1em;
+  background-color: #eee;
+}
+
+blockquote {
+  padding: 0.5em 1.2em 0.2em 1.2em;
+  border-left: 8px solid #eee;
+  margin-bottom: 20px;
+}
+
 p {
   line-height: 1.6;
   margin-bottom: 20px;
