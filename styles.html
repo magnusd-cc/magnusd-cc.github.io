@@ -28,7 +28,7 @@
         <script src="https://getinsights.io/js/insights.js"></script>
         <script>
 
-            var track = false;
+            var trackWithInsights = false;
             insights.init('V5J4RBprpVIa01zy');
 
             var url = new URL(window.location.href);
@@ -38,7 +38,7 @@
                 if (document.cookie.replace(/(?:(?:^|.*;\s*)notrack\s*\=\s*([^;]*).*$)|^.*$/, "$1") !== "true") {
                     if (url.hostname == "magnusd.cc") {
                         // insights.trackPages();
-                        track = true;
+                        trackWithInsights = true;
                         alert("Tracked page view");
                     } else {
                         alert("Don't track! Not magnusd.cc");
@@ -46,20 +46,28 @@
                 }
             }
 
-            var trackMenuInteraction = track;
+            var trackMenuInteraction = trackWithInsights;
 
             function toggleMenu() {
                 var x = document.getElementById("site-nav");
                 if (x.style.display === "none" || x.style.display === "") {
                     x.style.display = "block";
-                    if (track && trackMenuInteraction) {
+                    if (trackWithInsights && trackMenuInteraction) {
                         alert("Track menu interaction and disable");
+                        track({
+                            id: "menu-expanded",
+                            parameters: {
+                                page: parameters.path(),
+                                screenSize: parameters.screenType()
+                            }
+                        });
                         trackMenuInteraction = false;
                     }
                 } else {
                     x.style.display = "none";
                 }
             }
+
         </script>
 
     </head>
