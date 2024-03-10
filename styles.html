@@ -28,13 +28,17 @@
         <script src="https://getinsights.io/js/insights.js"></script>
         <script>
             var url = new URL(window.location.href);
-            alert(url.hostname);
             if (url.searchParams.get("notrack")) {
                 document.cookie = "notrack=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
             } else {
                 if (document.cookie.replace(/(?:(?:^|.*;\s*)notrack\s*\=\s*([^;]*).*$)|^.*$/, "$1") !== "true") {
-                    insights.init('V5J4RBprpVIa01zy');
-                    insights.trackPages();
+                    if (url.hostname == "magnusd.cc") {
+                        insights.init('V5J4RBprpVIa01zy');
+                        insights.trackPages();
+                        alert("Tracked");
+                    } else {
+                        alert("Don't track! Not magnusd.cc");
+                    }
                 }
             }
         </script>
