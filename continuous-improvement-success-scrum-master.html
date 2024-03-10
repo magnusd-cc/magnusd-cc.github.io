@@ -6,7 +6,7 @@
         <meta charset="utf-8">
         <title>Continuous improvement is what success as a Scrum Master is all about - Magnus Dahlgren</title>
 <link rel="alternate" type="application/rss+xml" href="https://magnusd.cc/atom.xml" />
-<link rel="stylesheet" type="text/css" href="style.css?7d645662629d219b2f670a6f73ca9747">
+<link rel="stylesheet" type="text/css" href="style.css?c7731c316a52519e144273a50f9c8ca8">
 <meta name="twitter:card" content="summary_large_image" /><meta name="twitter:site" content="@magnusdahlgren" /><meta name="twitter:title" content="Continuous improvement is what success as a Scrum Master is all about - Magnus Dahlgren" /><meta name="twitter:description" content="As long as things improve, they get better On recent commutes, I have traded the tube for the bus. The quieter environment allows me to spend the time listening to podcasts and I have ended up listening to Vasco Duarte’s Scrum Master Toolbox podcast a lot. One of my favourite questions he asks his g…" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -25,16 +25,27 @@
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
 
+        <script>
+            function toggleMenu() {
+                var x = document.getElementById("site-nav");
+                if (x.style.display === "none" || x.style.display === "") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+        </script>
+
     </head>
         
     <body class='magnetizer-article-page'>
 
     <header class="site-header">
-        <a href="/" class="site-logo">
+        <a href="/" id="site-logo">
             <i class="fa-solid fa-arrow-trend-up"></i>
             Magnus Dahlgren
         </a>
-        <nav class="site-nav">
+        <nav id="site-nav">
             <ul>
                 <li>
                     <a href='/'>Home</a>
@@ -47,6 +58,9 @@
                 </li>
             </ul>      
         </nav>
+        <a href="javascript:void(0);" class="hamburger" onclick="toggleMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
     </header>
 
 <main>

@@ -6,7 +6,7 @@
         <meta charset="utf-8">
         <title>Magnus Dahlgren’s blog - Magnus Dahlgren</title>
 <link rel="alternate" type="application/rss+xml" href="https://magnusd.cc/atom.xml" />
-<link rel="stylesheet" type="text/css" href="style.css?7d645662629d219b2f670a6f73ca9747">
+<link rel="stylesheet" type="text/css" href="style.css?c7731c316a52519e144273a50f9c8ca8">
 <meta name="twitter:card" content="summary_large_image" /><meta name="twitter:site" content="@magnusdahlgren" /><meta name="twitter:title" content="Magnus Dahlgren’s blog - Magnus Dahlgren" /><meta name="twitter:description" content="2024 (no blog posts yet) Older posts These older posts are from my time as an agile coach. My favourite online meeting tools? A sharpie and a pad of sticky notes 12 remotely useful tips for those being part of a partially distributed team Do some target practice in your next retrospective... and get…" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -25,16 +25,27 @@
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
 
+        <script>
+            function toggleMenu() {
+                var x = document.getElementById("site-nav");
+                if (x.style.display === "none" || x.style.display === "") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+        </script>
+
     </head>
         
     <body class='magnetizer-static-page'>
 
     <header class="site-header">
-        <a href="/" class="site-logo">
+        <a href="/" id="site-logo">
             <i class="fa-solid fa-arrow-trend-up"></i>
             Magnus Dahlgren
         </a>
-        <nav class="site-nav">
+        <nav id="site-nav">
             <ul>
                 <li>
                     <a href='/'>Home</a>
@@ -47,6 +58,9 @@
                 </li>
             </ul>      
         </nav>
+        <a href="javascript:void(0);" class="hamburger" onclick="toggleMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
     </header>
 
 <main>
