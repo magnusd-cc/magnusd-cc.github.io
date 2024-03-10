@@ -46,9 +46,10 @@
                 }
             }
 
+            var trackMenuInteraction = track;
+
             function toggleMenu() {
                 var x = document.getElementById("site-nav");
-                var trackMenuInteraction = true;
                 if (x.style.display === "none" || x.style.display === "") {
                     x.style.display = "block";
                     if (track && trackMenuInteraction) {
