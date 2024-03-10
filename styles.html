@@ -54,13 +54,14 @@
                     x.style.display = "block";
                     if (trackWithInsights && trackMenuInteraction) {
                         alert("Track menu interaction and disable");
-                        track({
+                        insights.track({
                             id: "menu-expanded",
                             parameters: {
                                 page: parameters.path(),
                                 screenSize: parameters.screenType()
                             }
                         });
+                        alert("Tracked event");
                         trackMenuInteraction = false;
                     }
                 } else {
