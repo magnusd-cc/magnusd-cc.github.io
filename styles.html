@@ -58,7 +58,8 @@
                             insights.track({
                             	id: "menu-expand",
                             	parameters: {
-                            	    screenSize: parameters.screenType()
+                                    path: insights.parameters.path(),
+                            	    screenType: insights.parameters.screenType()
                             	}
                         	});
 						}
