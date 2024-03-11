@@ -75,13 +75,21 @@
                 }
             }
 
+            function isTrackingEnabled() {
+                
+            }
+
+            function trackPageView() {
+
+            }
+
             function trackEventOnce(eventId) {
                 if (trackWithInsights) {
                     if (!trackedEvents.includes(eventId)) {
                         trackedEvents.push(eventId);
-                        alert("Tracked " . eventId);
+                        alert("Tracked " + eventId);
                     } else {
-                        alert("NOOP. Already tracked " . eventId);
+                        alert("NOOP. Already tracked " + eventId);
                     }
                 }
             }
