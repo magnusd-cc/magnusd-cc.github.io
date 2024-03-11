@@ -25,15 +25,67 @@
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
 
+        <script src="https://getinsights.io/js/insights.js"></script>
         <script>
+
+            var trackingEnabled = isTrackingEnabled();
+            var trackedEvents = [];
+
+            if (trackingEnabled) {
+                insights.init('V5J4RBprpVIa01zy');
+                trackPageView();
+            }
+
             function toggleMenu() {
                 var x = document.getElementById("site-nav");
                 if (x.style.display === "none" || x.style.display === "") {
                     x.style.display = "block";
+                    trackEventOnce("event-menu-expanded");
                 } else {
                     x.style.display = "none";
                 }
             }
+
+            function isTrackingEnabled() {
+                var url = new URL(window.location.href);
+                if (url.searchParams.get("notrack")) {
+                    document.cookie = "notrack=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+                    return false;
+                } else {
+                    if (document.cookie.replace(/(?:(?:^|.*;\s*)notrack\s*\=\s*([^;]*).*$)|^.*$/, "$1") !== "true") {
+                        if (url.hostname == "magnusd.cc") {
+                            return true;
+                        } else {
+                            return false;
+                        }
+                    }
+                }
+            }
+
+            function trackPageView() {
+                if (trackingEnabled) {
+                    insights.trackPages();
+                    alert("For real: track page view");
+                }
+            }
+
+            function trackEventOnce(eventId) {
+                if (trackingEnabled) {
+                    if (!trackedEvents.includes(eventId)) {
+                        insights.track({
+                            id: "event-menu-expand",
+                            parameters: {
+                                path: insights.parameters.path(),
+                            	screenType: insights.parameters.screenType(),
+                                locale: insights.parameters.locale()
+                            }
+                        });
+                        trackedEvents.push(eventId);
+                        alert("For real: track event " + eventId);
+					}
+                } 
+            }
+
         </script>
 
     </head>
