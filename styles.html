@@ -6,7 +6,7 @@
         <meta charset="utf-8">
         <title>Heading level 1 - Magnus Dahlgren</title>
 <meta name="robots" content="noindex"><link rel="alternate" type="application/rss+xml" href="https://magnusd.cc/atom.xml" />
-<link rel="stylesheet" type="text/css" href="style.css?11ef0e7dd408474481fcc6b6a5aa930a">
+<link rel="stylesheet" type="text/css" href="style.css?3262376f96c12f7f38d3d404078a9f4b">
 <meta name="twitter:card" content="summary_large_image" /><meta name="twitter:site" content="@magnusdahlgren" /><meta name="twitter:title" content="Heading level 1 - Magnus Dahlgren" /><meta name="twitter:description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rutrum ex nec nunc bibendum fringilla. In pharetra quam fermentum, mattis felis et, fermentum eros. Heading level 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rutrum ex nec nunc bibendum fringilla. In pharetra quam ferm…" /><meta name="twitter:image" content="https://magnusd.cc/004-daily-stand-up-daily-waste-of-time.jpg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -31,6 +31,8 @@
             var trackWithInsights = false;
             insights.init('V5J4RBprpVIa01zy');
 
+            var trackedEvents = [];
+
             var url = new URL(window.location.href);
             if (url.searchParams.get("notrack")) {
                 document.cookie = "notrack=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
@@ -52,25 +54,35 @@
                 var x = document.getElementById("site-nav");
                 if (x.style.display === "none" || x.style.display === "") {
                     x.style.display = "block";
-                    if (trackWithInsights && trackMenuInteraction) {
-                        alert("Track menu interaction and disable");
-                        try {
+                    trackEventOnce("event-menu-expanded");
+                    // if (trackWithInsights) {
+                        /*try {
                             insights.track({
-                            	id: "menu-expand",
+                            	id: "event-menu-expand",
                             	parameters: {
                                     path: insights.parameters.path(),
-                            	    screenType: insights.parameters.screenType()
+                            	    screenType: insights.parameters.screenType(),
+                                    locale: insights.parameters.locale()
                             	}
                         	});
 						}
-                        catch (err) {
-                            alert(err);
-                        }
+                        catch (err) {}
                         alert("Tracked event");
-                        trackMenuInteraction = false;
-                    }
+                        trackMenuInteraction = false;*/
+                    // }
                 } else {
                     x.style.display = "none";
+                }
+            }
+
+            function trackEventOnce(eventId) {
+                if (trackWithInsights) {
+                    if (!trackedEvents.includes(eventId)) {
+                        trackedEvents.push(eventId);
+                        alert("Tracked " . eventId);
+                    } else {
+                        alert("NOOP. Already tracked " . eventId);
+                    }
                 }
             }
 
