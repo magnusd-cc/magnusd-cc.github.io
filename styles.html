@@ -50,15 +50,12 @@
                 var url = new URL(window.location.href);
                 if (url.searchParams.get("notrack")) {
                     document.cookie = "notrack=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
-                    alert("DON'T TRACK - notrack param");
                     return false;
                 } else {
                     if (document.cookie.replace(/(?:(?:^|.*;\s*)notrack\s*\=\s*([^;]*).*$)|^.*$/, "$1") !== "true") {
                         if (url.hostname == "magnusd.cc") {
-                            alert("TRACK");
                             return true;
                         } else {
-                            alert("DON'T TRACK - cookie");
                             return false;
                         }
                     }
@@ -67,28 +64,26 @@
 
             function trackPageView() {
                 if (trackingEnabled) {
-                    // insights.trackPages();
-                    alert("Simulate: track page view");
+                    insights.trackPages();
+                    alert("For real: track page view");
                 }
             }
 
             function trackEventOnce(eventId) {
                 if (trackingEnabled) {
                     if (!trackedEvents.includes(eventId)) {
-                        /*insights.track({
+                        insights.track({
                             id: "event-menu-expand",
                             parameters: {
                                 path: insights.parameters.path(),
                             	screenType: insights.parameters.screenType(),
                                 locale: insights.parameters.locale()
                             }
-                        });*/
+                        });
                         trackedEvents.push(eventId);
-                        alert("Simulate: track event " + eventId);
+                        alert("For real: track event " + eventId);
 					}
-                } else {
-                    alert("NOOP. Already tracked " + eventId);
-                }
+                } 
             }
 
         </script>
