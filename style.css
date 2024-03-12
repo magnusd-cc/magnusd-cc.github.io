@@ -294,7 +294,7 @@ p.magntetizer-license a {
   display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 550px) {
 
   .site-header {
     flex-direction: column;
@@ -302,12 +302,21 @@ p.magntetizer-license a {
   }
 
   .hamburger {
-    display: block;
-    font-size: 1.5em;
-    padding: 0.3333em 0.6em;
+    display: flex;
     position: absolute;
     right: 0;
     top: 0;
+    height: 3.05em;
+    align-items: center;
+  }
+
+  .hamburger span {
+    padding: 0.66em;
+  }
+
+  .hamburger i {
+    font-size: 1.5em;
+    padding: 0.3333em;
   }
   
   #site-nav  {
